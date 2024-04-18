@@ -1,0 +1,86 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "supplement",
+  "name": "AllergyIntoleranceVerificationStatus",
+  "id": "allergyintolerance-verification-supplement",
+  "title": "CH AllergyIntolerance Verification Status",
+  "description": "Code supplement with translations of CHAllergyIntolerance verification status",
+  "url": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-verification-supplement",
+  "concept": [
+    {
+      "code": "unconfirmed",
+      "display": "Unconfirmed",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Unbestätigt"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Pas confirmé"
+        },
+        {
+          "language": "it-CH",
+          "value": "Non confermata"
+        }
+      ]
+    },
+    {
+      "code": "confirmed",
+      "display": "Confirmed",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Bestätigt"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Confirmé"
+        },
+        {
+          "language": "it-CH",
+          "value": "Confermata"
+        }
+      ]
+    },
+    {
+      "code": "refuted",
+      "display": "Refuted",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Widerlegt"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Réfuté"
+        },
+        {
+          "language": "it-CH",
+          "value": "Contestata"
+        }
+      ]
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in Error",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Irrtümlich eingegeben"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Saisie erronée"
+        },
+        {
+          "language": "it-CH",
+          "value": "Immessa per errore"
+        }
+      ]
+    }
+  ],
+  "experimental": true,
+  "supplements": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+}

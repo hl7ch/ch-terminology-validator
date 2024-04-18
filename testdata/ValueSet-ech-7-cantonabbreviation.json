@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ECH007CantonAbbreviation",
+  "id": "ech-7-cantonabbreviation",
+  "title": "eCH-0007 Canton Abbreviation",
+  "description": "eCH-0007: Each municipality has a unique cantonal affiliation, which can be defined by the cantonal abbreviation commonly used in Switzerland.",
+  "url": "http://fhir.ch/ig/ch-core/ValueSet/ech-7-cantonabbreviation",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.ch/ig/ch-core/CodeSystem/ech-7-cantonflabbreviation"
+      }
+    ],
+    "exclude": [
+      {
+        "system": "http://fhir.ch/ig/ch-core/CodeSystem/ech-7-cantonflabbreviation",
+        "concept": [
+          {
+            "code": "FL"
+          }
+        ]
+      }
+    ]
+  }
+}

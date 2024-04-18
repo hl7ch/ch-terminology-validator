@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "supplement",
+  "name": "AllergyIntoleranceType",
+  "id": "allergyintolerance-type-supplement",
+  "title": "CH AllergyIntolerance Type",
+  "description": "Code supplement with translations of CHAllergyIntolerance type",
+  "url": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-type-supplement",
+  "concept": [
+    {
+      "code": "allergy",
+      "display": "Allergy",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Allergie"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Allergie"
+        },
+        {
+          "language": "it-CH",
+          "value": "Allergia"
+        }
+      ]
+    },
+    {
+      "code": "intolerance",
+      "display": "Intolerance",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Intoleranz"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Intolérance"
+        },
+        {
+          "language": "it-CH",
+          "value": "Intolleranza"
+        }
+      ]
+    }
+  ],
+  "experimental": true,
+  "supplements": "http://hl7.org/fhir/allergy-intolerance-type"
+}

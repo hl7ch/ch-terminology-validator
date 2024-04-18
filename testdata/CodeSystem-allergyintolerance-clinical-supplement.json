@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "supplement",
+  "name": "AllergyIntoleranceClinicalStatus",
+  "id": "allergyintolerance-clinical-supplement",
+  "title": "CH AllergyIntolerance Clinical Status",
+  "description": "Code supplement with translations of CHAllergyIntolerance clinical status",
+  "url": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-clinical-supplement",
+  "concept": [
+    {
+      "code": "active",
+      "display": "Active",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Aktiv"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Actif"
+        },
+        {
+          "language": "it-CH",
+          "value": "Attiva"
+        }
+      ]
+    },
+    {
+      "code": "inactive",
+      "display": "Inactive",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Inaktiv"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Inactif"
+        },
+        {
+          "language": "it-CH",
+          "value": "Inattiva"
+        }
+      ]
+    },
+    {
+      "code": "resolved",
+      "display": "Resolved",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Behoben"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Résolu"
+        },
+        {
+          "language": "it-CH",
+          "value": "Risolta"
+        }
+      ]
+    }
+  ],
+  "experimental": true,
+  "supplements": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+}

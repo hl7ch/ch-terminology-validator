@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ActSubstanceAdminSubstitutionCode",
+  "id": "ActSubstanceAdminSubstitutionCode",
+  "title": "ActSubstanceAdminSubstitutionCode",
+  "description": "ActSubstanceAdminSubstitutionCode",
+  "url": "http://fhir.ch/ig/ch-term/ValueSet/ActSubstanceAdminSubstitutionCode",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "_ActSubstanceAdminSubstitutionCode"
+          }
+        ]
+      }
+    ],
+    "exclude": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+        "concept": [
+          {
+            "code": "_ActSubstanceAdminSubstitutionCode"
+          },
+          {
+            "code": "N"
+          }
+        ]
+      }
+    ]
+  }
+}

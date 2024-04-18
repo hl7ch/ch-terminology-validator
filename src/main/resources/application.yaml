@@ -1,0 +1,10 @@
+spring.application.name: terminology-validator
+
+application:
+  title: ${spring.application.name}
+  
+hapi:
+  fhir:
+    version: r4
+    validation:
+      enabled: true

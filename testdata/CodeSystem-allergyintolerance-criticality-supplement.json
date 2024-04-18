@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "supplement",
+  "name": "AllergyIntoleranceCriticalityStatus",
+  "id": "allergyintolerance-criticality-supplement",
+  "title": "CH AllergyIntolerance Criticality Status",
+  "description": "Code supplement with translations of CHAllergyIntolerance criticality status",
+  "url": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-criticality-supplement",
+  "concept": [
+    {
+      "code": "low",
+      "display": "Low Risk",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Geringes Risiko"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Risque faible"
+        },
+        {
+          "language": "it-CH",
+          "value": "Basso rischio"
+        }
+      ]
+    },
+    {
+      "code": "high",
+      "display": "High Risk",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Hohes Risiko"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Risque élevé"
+        },
+        {
+          "language": "it-CH",
+          "value": "Alto rischio"
+        }
+      ]
+    },
+    {
+      "code": "unable-to-assess",
+      "display": "Unable to Assess Risk",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Risikobewertung nicht möglich"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Impossible d’évaluer le risque"
+        },
+        {
+          "language": "it-CH",
+          "value": "Rischio non valutabile"
+        }
+      ]
+    }
+  ],
+  "experimental": true,
+  "supplements": "http://hl7.org/fhir/allergy-intolerance-criticality"
+}

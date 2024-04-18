@@ -1,0 +1,559 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ch-vacd-vaccines-sct-targetdiseases-cm",
+  "url": "http://fhir.ch/ig/ch-term/ConceptMap/ch-vacd-vaccines-sct-targetdiseases-cm",
+  "name": "SnomedCTVaccineCodeToTargetDiseaseMapping",
+  "title": "Snomed CT VaccineCode To TargetDisease Mapping",
+  "description": "Mappings from SnomedCT vaccine code to target disease according to the correcsponding valuesets",
+  "status": "active",
+  "publisher": "eHealth Suisse",
+  "contact": [
+    {
+      "name": "eHealth Suisse",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.e-health-suisse.ch/"
+        }
+      ]
+    }
+  ],
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "experimental": false,
+  "sourceUri": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-snomedct-vs",
+  "targetUri": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-targetdiseasesandillnessesundergoneforimmunization-vs",
+  "group": [
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "871717007",
+          "display": "Vaccine product containing only Yellow fever virus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "16541001",
+              "display": "Yellow fever (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871719005",
+          "display": "Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "712986001",
+              "display": "Central European encephalitis (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871724008",
+          "display": "Vaccine product containing only Japanese encephalitis virus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "52947006",
+              "display": "Japanese encephalitis virus disease (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871726005",
+          "display": "Vaccine product containing only Rabies lyssavirus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "14168008",
+              "display": "Rabies (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871737006",
+          "display": "Vaccine product containing only Mumps orthorubulavirus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "36989005",
+              "display": "Mumps (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871739009",
+          "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "398102009",
+              "display": "Acute poliomyelitis (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871742003",
+          "display": "Vaccine product containing only Clostridium tetani antigen (medicinal product)",
+          "target": [
+            {
+              "code": "76902006",
+              "display": "Tetanus (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871751006",
+          "display": "Vaccine product containing only Hepatitis A virus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "40468003",
+              "display": "Viral hepatitis, type A (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871761004",
+          "display": "Vaccine product containing only Rotavirus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "18624000",
+              "display": "Disease caused by Rotavirus (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871764007",
+          "display": "Vaccine product containing only Haemophilus influenzae type B antigen (medicinal product)",
+          "target": [
+            {
+              "code": "709410003",
+              "display": "Haemophilus influenzae type b infection (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871765008",
+          "display": "Vaccine product containing only Measles morbillivirus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "14189004",
+              "display": "Measles (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871803007",
+          "display": "Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)",
+          "target": [
+            {
+              "code": "66071002",
+              "display": "Viral hepatitis type B (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "40468003",
+              "display": "Viral hepatitis, type A (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871822003",
+          "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "66071002",
+              "display": "Viral hepatitis type B (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871826000",
+          "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+          "target": [
+            {
+              "code": "76902006",
+              "display": "Tetanus (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "397430003",
+              "display": "Diphtheria caused by Corynebacterium diphtheriae (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871831003",
+          "display": "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+          "target": [
+            {
+              "code": "36653000",
+              "display": "Rubella (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "14189004",
+              "display": "Measles (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "36989005",
+              "display": "Mumps (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871837004",
+          "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+          "target": [
+            {
+              "code": "398102009",
+              "display": "Acute poliomyelitis (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "76902006",
+              "display": "Tetanus (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "397430003",
+              "display": "Diphtheria caused by Corynebacterium diphtheriae (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871866001",
+          "display": "Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)",
+          "target": [
+            {
+              "code": "23511006",
+              "display": "Meningococcal infectious disease (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871873006",
+          "display": "Vaccine product containing only Neisseria meningitidis serogroup A, C, W135 and Y antigens (medicinal product)",
+          "target": [
+            {
+              "code": "23511006",
+              "display": "Meningococcal infectious disease (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871875004",
+          "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+          "target": [
+            {
+              "code": "76902006",
+              "display": "Tetanus (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "27836007",
+              "display": "Pertussis (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "397430003",
+              "display": "Diphtheria caused by Corynebacterium diphtheriae (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871878002",
+          "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+          "target": [
+            {
+              "code": "398102009",
+              "display": "Acute poliomyelitis (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "76902006",
+              "display": "Tetanus (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "27836007",
+              "display": "Pertussis (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "397430003",
+              "display": "Diphtheria caused by Corynebacterium diphtheriae (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871887006",
+          "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)",
+          "target": [
+            {
+              "code": "709410003",
+              "display": "Haemophilus influenzae type b infection (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "398102009",
+              "display": "Acute poliomyelitis (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "76902006",
+              "display": "Tetanus (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "27836007",
+              "display": "Pertussis (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "397430003",
+              "display": "Diphtheria caused by Corynebacterium diphtheriae (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871895005",
+          "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)",
+          "target": [
+            {
+              "code": "709410003",
+              "display": "Haemophilus influenzae type b infection (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "66071002",
+              "display": "Viral hepatitis type B (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "398102009",
+              "display": "Acute poliomyelitis (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "76902006",
+              "display": "Tetanus (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "27836007",
+              "display": "Pertussis (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "397430003",
+              "display": "Diphtheria caused by Corynebacterium diphtheriae (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871908002",
+          "display": "Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+          "target": [
+            {
+              "code": "38907003",
+              "display": "Varicella (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "36653000",
+              "display": "Rubella (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "14189004",
+              "display": "Measles (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "36989005",
+              "display": "Mumps (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "871919004",
+          "display": "Vaccine product containing only live attenuated Human alphaherpesvirus 3 antigen (medicinal product)",
+          "target": [
+            {
+              "code": "38907003",
+              "display": "Varicella (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "4740000",
+              "display": "Herpes zoster (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1052328007",
+          "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)",
+          "target": [
+            {
+              "code": "16814004",
+              "display": "Pneumococcal infectious disease (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1119254000",
+          "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens (medicinal product)",
+          "target": [
+            {
+              "code": "16814004",
+              "display": "Pneumococcal infectious disease (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1119349007",
+          "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+          "target": [
+            {
+              "code": "840539006",
+              "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1156183006",
+          "display": "Vaccine product containing only Human alphaherpesvirus 3 recombinant surface glycoprotein E antigen (medicinal product)",
+          "target": [
+            {
+              "code": "4740000",
+              "display": "Herpes zoster (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "961000221100",
+          "display": "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)",
+          "target": [
+            {
+              "code": "4834000",
+              "display": "Typhoid fever (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "981000221107",
+          "display": "Streptococcus pneumoniae Danish serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F, and 33F capsular polysaccharide antigens only vaccine product",
+          "target": [
+            {
+              "code": "16814004",
+              "display": "Pneumococcal infectious disease (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "991000221105",
+          "display": "Vaccine product containing only Vibrio cholerae antigen (medicinal product)",
+          "target": [
+            {
+              "code": "63650001",
+              "display": "Cholera (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1181000221105",
+          "display": "Vaccine product containing only Influenza virus antigen (medicinal product)",
+          "target": [
+            {
+              "code": "719590007",
+              "display": "Influenza caused by seasonal influenza virus (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "719865001",
+              "display": "Influenza caused by pandemic influenza virus (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1861000221106",
+          "display": "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)",
+          "target": [
+            {
+              "code": "56717001",
+              "display": "Tuberculosis (disorder)",
+              "equivalence": "relatedto"
+            },
+            {
+              "code": "240532009",
+              "display": "Human papillomavirus infection (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "2001000221108",
+          "display": "Vaccine product containing only Human papillomavirus 6, 11, 16 and 18 antigens (medicinal product)",
+          "target": [
+            {
+              "code": "240532009",
+              "display": "Human papillomavirus infection (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "29061000087103",
+          "display": "Vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (medicinal product)",
+          "target": [
+            {
+              "code": "840539006",
+              "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1162643001",
+          "display": "Vaccine product containing only severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (medicinal product)",
+          "target": [
+            {
+              "code": "840539006",
+              "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

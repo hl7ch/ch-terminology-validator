@@ -1,0 +1,86 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "supplement",
+  "name": "AllergyIntoleranceCategory",
+  "id": "allergyintolerance-category-supplement",
+  "title": "CH AllergyIntolerance Category",
+  "description": "Code supplement with translations of CHAllergyIntolerance category",
+  "url": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-category-supplement",
+  "concept": [
+    {
+      "code": "food",
+      "display": "Food",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Lebensmittel"
+        },
+        {
+          "language": "fr-CH",
+          "value": "aliment"
+        },
+        {
+          "language": "it-CH",
+          "value": "alimento"
+        }
+      ]
+    },
+    {
+      "code": "medication",
+      "display": "Medication",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Arzneimittel"
+        },
+        {
+          "language": "fr-CH",
+          "value": "médicament"
+        },
+        {
+          "language": "it-CH",
+          "value": "medicamento"
+        }
+      ]
+    },
+    {
+      "code": "environment",
+      "display": "Environment",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Umweltstoffe"
+        },
+        {
+          "language": "fr-CH",
+          "value": "environnement"
+        },
+        {
+          "language": "it-CH",
+          "value": "ambiente"
+        }
+      ]
+    },
+    {
+      "code": "biologic",
+      "display": "Biologic",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Biologische Präparate"
+        },
+        {
+          "language": "fr-CH",
+          "value": "biologique"
+        },
+        {
+          "language": "it-CH",
+          "value": "biologico"
+        }
+      ]
+    }
+  ],
+  "experimental": true,
+  "supplements": "http://hl7.org/fhir/allergy-intolerance-category"
+}

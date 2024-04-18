@@ -1,0 +1,1137 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SnomedCTForVaccineCode",
+  "id": "ch-vacd-vaccines-snomedct-vs",
+  "title": "CH VACD Snomed CT for vaccine code",
+  "description": "The list of vaccine products in Snomed CT list.",
+  "url": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-snomedct-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "787859002",
+            "display": "Vaccine product (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Unbekannter Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin inconnu"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino sconosciuto"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin nunenconuschent"
+              },
+              {
+                "language": "en-US",
+                "value": "Vaccine unknown"
+              }
+            ]
+          },
+          {
+            "code": "871717007",
+            "display": "Vaccine product containing only Yellow fever virus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Gelbfieber-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la fièvre jaune"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la febbre gialla"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter la fevra melna"
+              },
+              {
+                "language": "en-US",
+                "value": "Yellow fever vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871719005",
+            "display": "Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Zeckenenzephalitis-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre l'encéphalite à tiques"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la meningoencefalite da zecche"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter l'encefalitis da zeccas"
+              },
+              {
+                "language": "en-US",
+                "value": "Tick-borne encephalitis vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871724008",
+            "display": "Vaccine product containing only Japanese encephalitis virus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Japanische-Enzephalitis-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre l'encéphalite japonaise"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro l’encefalite giapponese"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter l'encefalitis giapunaisa"
+              },
+              {
+                "language": "en-US",
+                "value": "Japanese encephalitis virus vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871726005",
+            "display": "Vaccine product containing only Rabies lyssavirus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Tollwut-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin antirabique"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la rabbia"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter la frenesia"
+              },
+              {
+                "language": "en-US",
+                "value": "Rabies vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871737006",
+            "display": "Vaccine product containing only Mumps orthorubulavirus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Mumps-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre les oreillons"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la parotite"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter il glandun"
+              },
+              {
+                "language": "en-US",
+                "value": "Mumps vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871739009",
+            "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Poliomyelitis-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la poliomyélite"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la poliomielite"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter poliomielitis"
+              },
+              {
+                "language": "en-US",
+                "value": "Human poliovirus antigen only vaccine product"
+              }
+            ]
+          },
+          {
+            "code": "871742003",
+            "display": "Vaccine product containing only Clostridium tetani antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Tetanus-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre le tétanos"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro il tetano"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter tetanus"
+              },
+              {
+                "language": "en-US",
+                "value": "Tetanus vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871751006",
+            "display": "Vaccine product containing only Hepatitis A virus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Hepatitis A-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre l'hépatite A"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro l’epatite A"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter hepatitis A"
+              },
+              {
+                "language": "en-US",
+                "value": "Hepatitis A vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871761004",
+            "display": "Vaccine product containing only Rotavirus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Rotavirus-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre les rotavirus"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro i rotavirus"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter il rotavirus"
+              },
+              {
+                "language": "en-US",
+                "value": "Rotavirus vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871764007",
+            "display": "Vaccine product containing only Haemophilus influenzae type B antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Haemophilus influenzae B-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre Haemophilus influenzae de type B"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro l’Haemophilus influenzae di tipo B"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter hemofilus influenza B"
+              },
+              {
+                "language": "en-US",
+                "value": "Haemophilus influenzae type B vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871765008",
+            "display": "Vaccine product containing only Measles morbillivirus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Masern-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la rougeole"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro il morbillo"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter il virustgel"
+              },
+              {
+                "language": "en-US",
+                "value": "Measles vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871803007",
+            "display": "Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Hepatitis A- und B-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre les hépatites A et B"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro l’epatite A e B"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter hepatitis A e B"
+              },
+              {
+                "language": "en-US",
+                "value": "Hepatitis A and B vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871822003",
+            "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Hepatitis B-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre l'hépatite B"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro l’epatite B"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter hepatitis B"
+              },
+              {
+                "language": "en-US",
+                "value": "Hepatitis B vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871826000",
+            "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Diphterie- und Tetanus-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la diphtérie et le tétanos"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la difterite e il tetano"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter difteria e tetanus"
+              },
+              {
+                "language": "en-US",
+                "value": "Diphtheria and tetanus vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871831003",
+            "display": "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Masern-, Mumps- und Röteln-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la rougeole, les oreillons et la rubéole"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro il morbillo, la parotite e la rosolia"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter il virustgel, il glandun e la rubella"
+              },
+              {
+                "language": "en-US",
+                "value": "Measles and mumps and rubella vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871837004",
+            "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Diphterie-, Poliomyelitis- und Tetanus-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la diphtérie, la poliomyélite et le tétanos"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la difterite, il tetano e la poliomielite"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter difteria, poliomielitis e tetanus"
+              },
+              {
+                "language": "en-US",
+                "value": "Diphtheria and poliomyelitis and tetanus vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871866001",
+            "display": "Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Meningokokken-C-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre les méningocoques C"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la meningite C"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter meningococcus C"
+              },
+              {
+                "language": "en-US",
+                "value": "Meningitis C vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871873006",
+            "display": "Vaccine product containing only Neisseria meningitidis serogroup A, C, W135 and Y antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Meningokokken-A, C-, W135- und Y-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre les méningocoques de types A, C, W135 et Y"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la meningite A, C, W135 e Y"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter meningococcus A, C, W135 ed Y"
+              },
+              {
+                "language": "en-US",
+                "value": "Meningitis A, C, W135 and Y vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871875004",
+            "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Diphterie-, Pertussis- und Tetanus-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la diphtérie, la coqueluche et le tétanos"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la difterite, il tetano e la pertosse"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter difteria, la tuss chanina e tetanus"
+              },
+              {
+                "language": "en-US",
+                "value": "Diphtheria and pertussis and tetanus vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871878002",
+            "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Diphterie-, Pertussis-, Poliomyelitis- und Tetanus-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la diphtérie, la coqueluche, la poliomyélite et le tétanos"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la difterite, il tetano, la pertosse e la poliomielite"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter difteria, la tuss chanina, poliomielitis e tetanus"
+              },
+              {
+                "language": "en-US",
+                "value": "Diphtheria and pertussis and poliomyelitis and tetanus vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871887006",
+            "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Diphtherie-, Haemophilus influenzae B-, Pertussis-, Poliomyelitis- und Tetanus-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la diphtérie, Haemophilus influenzae de type B, la coqueluche, la poliomyélite et le tétanos"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la difterite, il tetano, la pertosse, la poliomielite e l’Haemophilus influenzae di tipo B"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter difteria, hemofilus influenza B, la tuss chanina, poliomielitis e tetanus"
+              },
+              {
+                "language": "en-US",
+                "value": "Diphtheria and Haemophilus influenzae type B and pertussis and poliomyelitis and tetanus vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871895005",
+            "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Diphtherie-, Haemophilus influenzae B-, Hepatitis B-, Pertussis-, Poliomyelitis- und Tetanus-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la diphtérie, Haemophilus influenzae de type B, l'hépatite B, la coqueluche, la poliomyélite et le tétanos"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la difterite, il tetano, la pertosse, la poliomielite, l’Haemophilus influenzae di tipo B e l’epatite B"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter difteria, hemofilus influenza B, hepatitis B, la tuss chanina, poliomielitis e tetanus"
+              },
+              {
+                "language": "en-US",
+                "value": "Diphtheria and Haemophilus influenzae type B and hepatitis B and pertussis and poliomyelitis and tetanus vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871908002",
+            "display": "Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Masern-, Mumps-, Röteln- und Windpocken-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la rougeole, les oreillons, la rubéole et la varicelle"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro il morbillo, la parotite, la rosolia e la varicella"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter il virustgel, il glandun, la rubella e la virola selvadia"
+              },
+              {
+                "language": "en-US",
+                "value": "Measles and mumps and rubella and varicella virus vaccine"
+              }
+            ]
+          },
+          {
+            "code": "871919004",
+            "display": "Vaccine product containing only live attenuated Human alphaherpesvirus 3 antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Attenuierter Varizella-Zoster-Lebendimpfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin à virus varicelle-zona vivant atténué"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino vivo attenuato contro il virus varicella-zoster"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin viv attenuà cunter la virola selvadia"
+              },
+              {
+                "language": "en-US",
+                "value": "Live attenuated Varicella-zoster vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1052328007",
+            "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "7-valenter Pneumokokken-Konjugatimpfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin antipneumoccique conjugué 7-valent"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino coniugato eptavalente contro gli pneumococchi"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter pneumococcus fusiunà valenza 7"
+              },
+              {
+                "language": "en-US",
+                "value": "Pneumococcal 7-valent conjugate vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1119254000",
+            "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "13-valenter Pneumokokken-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin antipneumococcique 13-valent"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino 13-valente contro gli pneumococchi"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter pneumococcus fusiunà valenza 13"
+              },
+              {
+                "language": "en-US",
+                "value": "Pneumococcal 13-valent conjugate vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1156183006",
+            "display": "Vaccine product containing only Human alphaherpesvirus 3 recombinant surface glycoprotein E antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Rekombinanter Varizella-Zoster-Glykoprotein-E-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin varicelle-zona recombinant à glycoprotéine E"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino con antigene glicoproteina E ricombinante del virus varicella-zoster"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter la virola selvadia cun antigens dal glicoprotein E recumbinant"
+              },
+              {
+                "language": "en-US",
+                "value": "Recombinant Varicella-zoster glycoprotein E vaccine"
+              }
+            ]
+          },
+          {
+            "code": "961000221100",
+            "display": "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Typhus-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la fièvre typhoïde"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la febbre tifoide"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter tifus"
+              },
+              {
+                "language": "en-US",
+                "value": "Typhoid vaccine"
+              }
+            ]
+          },
+          {
+            "code": "981000221107",
+            "display": "Streptococcus pneumoniae Danish serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F, and 33F capsular polysaccharide antigens only vaccine product",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "23-valenter Pneumokokken-Konjugatimpfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin antipneumococcique conjugué 23-valent"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino coniugato 23-valente contro gli pneumococchi"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter pneumococcus fusiunà valenza 23"
+              },
+              {
+                "language": "en-US",
+                "value": "Pneumococcal 23-valent conjugate vaccine"
+              }
+            ]
+          },
+          {
+            "code": "991000221105",
+            "display": "Vaccine product containing only Vibrio cholerae antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Cholera-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre le choléra"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro il colera"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter colera"
+              },
+              {
+                "language": "en-US",
+                "value": "Cholera vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1181000221105",
+            "display": "Vaccine product containing only Influenza virus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Influenza-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la grippe"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro l’influenza"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter la grippa"
+              },
+              {
+                "language": "en-US",
+                "value": "Influenza vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1861000221106",
+            "display": "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "BCG (Bacillus Calmette-Guérin)-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin BCG (bacille de Calmette-Guérin)"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino BCG (bacillo di Calmette-Guérin)"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter BCG (Bacillus Calmette-Guérin)"
+              },
+              {
+                "language": "en-US",
+                "value": "BCG (Bacillus Calmette-Guerin) vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1991000221106",
+            "display": "Vaccine product containing only Human papillomavirus 16 and 18 antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Impfstoff gegen humanes Papillomavirus 16 und 18"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre les papillomavirus humains 16 et 18"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro il papillomavirus umano tipi 16 e 18"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter ils papillomavirus umans 16 e 18"
+              },
+              {
+                "language": "en-US",
+                "value": "Human papillomavirus 16 and 18 vaccine"
+              }
+            ]
+          },
+          {
+            "code": "2001000221108",
+            "display": "Vaccine product containing only Human papillomavirus 6, 11, 16 and 18 antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Impfstoff gegen humanes Papillomavirus 6, 11, 16 und 18"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre les papillomavirus humains 6, 11, 16 et 18"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro il papillomavirus umano tipi 6, 11, 16 e 18"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter ils papillomavirus umans 6, 11, 16 e 18"
+              },
+              {
+                "language": "en-US",
+                "value": "Human papillomavirus 6, 11, 16 and 18 vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1119349007",
+            "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "mRNA-Impfstoff gegen COVID-19"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin à ARNm contre le COVID-19"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino a mRNA anti-COVID-19"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter COVID-19 mRNA"
+              },
+              {
+                "language": "en-US",
+                "value": "COVID-19 mRNA vaccine"
+              }
+            ]
+          },
+          {
+            "code": "29061000087103",
+            "display": "Vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Nicht replizierender viraler Vektorimpfstoff gegen COVID-19"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin à vecteur viral non réplicatif contre le COVID-19"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino a vettore virale non replicante anti-COVID-19"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter COVID-19 vectorial viral betg replitgant"
+              },
+              {
+                "language": "en-US",
+                "value": "COVID-19 non-replicating viral vector vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1162643001",
+            "display": "Vaccine product containing only severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Covid-19 rekombinanter Spike-Protein-Antigen-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin antigénique à protéine Spike recombinante contre le COVID-19"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino antigenico anti-COVID-19 con proteina spike ricombinante"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter COVID-19 cun antigens dal protein spike recumbinant"
+              },
+              {
+                "language": "en-US",
+                "value": "COVID-19 recombinant spike protein antigen vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1209197008",
+            "display": "Vaccine product containing only Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Impfstoff gegen die humanen Papillomaviren 6, 11, 16, 18, 31, 33, 45, 52 und 58"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre le papillomavirus humain 6, 11, 16, 18, 31, 33, 45, 52 and 58"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro i papillomavirus umani 6, 11, 16, 18, 31, 33, 45, 52 e 58"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter ils papillomavirus umans 6, 11, 16, 18, 31, 33, 45, 52 e 58"
+              },
+              {
+                "language": "en-US",
+                "value": "Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1981000221108",
+            "display": "Vaccine product containing only Neisseria meningitidis serogroup B antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Meningokokken-B-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre les méningocoques B"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino contro la meningite B"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter meningococcus B"
+              },
+              {
+                "language": "en-US",
+                "value": "Meningitis B vaccine"
+              }
+            ]
+          },
+          {
+            "code": "836389008",
+            "display": "Vaccine product containing Vaccinia virus antigen (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Pocken-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin contre la variole"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino antivaiolo"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter la virola"
+              },
+              {
+                "language": "en-US",
+                "value": "Vaccinia virus antigen-containing vaccine product"
+              }
+            ]
+          },
+          {
+            "code": "1119220001",
+            "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F, and 33F capsular polysaccharide antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "23-valenter Pneumokokken-Impfstoff"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vaccin antipneumococcique 23-valent"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaccino 23-valente contro gli pneumococchi"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccin cunter pneumococcus fusiunà valenza 23"
+              },
+              {
+                "language": "en-US",
+                "value": "Pneumococcal 23-valent vaccine"
+              }
+            ]
+          },
+          {
+            "code": "1252708008",
+            "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)"
+              },
+              {
+                "language": "it-CH",
+                "value": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)"
+              },
+              {
+                "language": "rm-CH",
+                "value": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)"
+              },
+              {
+                "language": "en-US",
+                "value": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1487 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ch.fhir.ig.ch-term",
+  "url": "http://fhir.ch/ig/ch-term/ImplementationGuide/ch.fhir.ig.ch-term",
+  "version": "3.0.0-ci-build",
+  "name": "CH_TERM",
+  "title": "CH Term (R4)",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-02-29",
+  "publisher": "HL7 Switzerland",
+  "contact": [
+    {
+      "name": "HL7 Switzerland",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.hl7.ch/"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Switzerland",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.hl7.ch/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Implementation Guide for Swiss Terminology",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "CH",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "copyright": "CC0-1.0",
+  "packageId": "ch.fhir.ig.ch-term",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "ihe.formatcode.fhir",
+      "version": "1.1.0",
+      "uri": "https://profiles.ihe.net/fhir/ihe.formatcode.fhir/ImplementationGuide/ihe.formatcode.fhir",
+      "id": "ihe_formatcode_fhir"
+    },
+    {
+      "packageId": "hl7.terminology",
+      "version": "5.4.0",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "id": "hl7_terminology"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "ValueSet/ActivePharmaceuticalIngredient"
+        },
+        "description": "ActivePharmaceuticalIngredient",
+        "exampleBoolean": false,
+        "name": "ActivePharmaceuticalIngredient"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ActSubstanceAdminSubstitutionCode"
+        },
+        "name": "ActSubstanceAdminSubstitutionCode",
+        "description": "ActSubstanceAdminSubstitutionCode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/ahvn13"
+        },
+        "description": "The AHVN13 / NAVS13 - (abbreviation for new thirteen-digit Social Security number) - is an administrative identifier for natural persons in Switzerland. It is issued, announced and administered by the [Central Compensation Office](https://www.zas.admin.ch/zas/de/home/partenaires-et-institutions-/navs13.html). It is available to all organisations and communities for which there is a legal basis. The AHVN13 / NAVS13 shall not contain point characters for separation.",
+        "exampleBoolean": false,
+        "name": "AHVN13"
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/ber"
+        },
+        "description": "The Business and Enterprise Register (BER) contains all enterprises and business in private and public law which are domiciled and exercise an economic activity in Switzerland.\n                      French: (REE) Registre des entreprises et des établissements. \n                      German: (BUR) Betriebs- und Unternehmensregister,\n                      Italian: (RIS) Registro delle imprese e degli stabilimenti.",
+        "exampleBoolean": false,
+        "name": "BER"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/bfs-encounter-class-to-fhir"
+        },
+        "description": "BFS Encounter Class to FHIR mapping",
+        "exampleBoolean": false,
+        "name": "BFS Encounter Class to FHIR mapping"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/bfs-medstats-17-admitsource"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Unmittelbarer Aufenthaltsort vor dem Eintritt. Wo befand sich BFS der Patient / die Patientin?",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 17 1.2.V02 - Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bfs-medstats-17-admitsource"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Unmittelbarer Aufenthaltsort vor dem Eintritt. Wo befand sich BFS der Patient / die Patientin?",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 17 1.2.V02 - Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/bfs-medstats-18-admittype"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Beschreibung der Umstände des Eintritts. Wie wurde der BFS Patient / die Patientin aufgenommen?",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 18 1.2.V03 - Eintrittsart / Mode d’admission / Genere di ricovero"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bfs-medstats-18-admittype"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Beschreibung der Umstände des Eintritts. Wie wurde der BFS Patient / die Patientin aufgenommen?",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 18 1.2.V03 - Eintrittsart / Mode d’admission / Genere di ricovero"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/bfs-medstats-19-admitrole"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Wer hat die Initiative für die Klinikeinweisung ergriffen?",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 19 1.2.V04 - Einweisende Instanz / Décision d’envoi / Istanza ricoverante"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bfs-medstats-19-admitrole"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Unmittelbarer Aufenthaltsort vor dem Eintritt. Wo befand sich BFS der Patient / die Patientin?",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 19 1.2.V04 - Einweisende Instanz / Décision d’envoi / Istanza ricoverante"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/bfs-medstats-20-encounterclass"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Angabe der Behandlungsart",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 20 1.3.V01 - Behandlungsart / Type de prise en charge / Genere di trattamento"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bfs-medstats-20-encounterclass"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Angabe der Behandlungsart",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 20 1.3.V01 - Behandlungsart / Type de prise en charge / Genere di trattamento"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/bfs-medstats-21-encountertype"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Im Rahmen des Spitalaufenthaltes belegte Liegeklasse, nicht BFS die Versicherungskategorie. Bei Wechsel der Klasse ist die im Wesentlichen beanspruchte Klasse anzugeben.",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 21 1.3.V02 - Klasse / Classe / Classe"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bfs-medstats-21-encountertype"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Im Rahmen des Spitalaufenthaltes belegte Liegeklasse, nicht BFS die Versicherungskategorie. Bei Wechsel der Klasse ist die im Wesentlichen beanspruchte Klasse anzugeben.",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 21 1.3.V02 - Klasse / Classe / Classe"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/bfs-medstats-27-dischargedecision"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Wer hat den Klinikaustritt veranlasst?",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 27 1.5.V02 - Entscheid für Austritt / Décision de sortie / Décisione dell’uscita"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bfs-medstats-27-dischargedecision"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Wer hat den Klinikaustritt veranlasst?",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 27 1.5.V02 - Entscheid für Austritt / Décision de sortie / Décisione dell’uscita"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/bfs-medstats-28-dischargedestination"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Wohin wurde der Patient entlassen?",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 28 1.5.V03 - Aufenthalt nach Austritt / Séjour après la sortie / Destinazione dopo l’uscita"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bfs-medstats-28-dischargedestination"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Wohin wurde der Patient entlassen?",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 28 1.5.V03 - Aufenthalt nach Austritt / Séjour après la sortie / Destinazione dopo l’uscita"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/bfs-medstats-29-dischargeencounter"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Behandlung, Pflege, Rehabilitation nach dem Spitalaufenthalt. Es geht darum, den Behandlungserfolg resp. den Abhängigkeitsgrad bei Austritt anzugeben. Nur die am besten zutreffende Kategorie auswählen.",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 29 1.5.V04 - Behandlung nach Austritt / Prise en charge après la sortie / Trattamento dopo l’uscita"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bfs-medstats-29-dischargeencounter"
+        },
+        "description": "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Behandlung, Pflege, Rehabilitation nach dem Spitalaufenthalt. Es geht darum, den Behandlungserfolg resp. den Abhängigkeitsgrad bei Austritt anzugeben. Nur die am besten zutreffende Kategorie auswählen.",
+        "exampleBoolean": false,
+        "name": "BFS Medizinische Statistik - 29 1.5.V04 - Behandlung nach Austritt / Prise en charge après la sortie / Trattamento dopo l’uscita"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CHAllergyIntoleranceValueSet"
+        },
+        "name": "CH AllergyIntolerance",
+        "description": "CH AllergyIntolerance coding value set. This value set includes codes values  from SNOMED Clinical Terms® for no known [xy] allergies AND findings AND substances for the documentation of allergy or intolerance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/allergyintolerance-category-supplement"
+        },
+        "name": "CH AllergyIntolerance Category",
+        "description": "Code supplement with translations of CHAllergyIntolerance category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/allergyintolerance-clinical-supplement"
+        },
+        "name": "CH AllergyIntolerance Clinical Status",
+        "description": "Code supplement with translations of CHAllergyIntolerance clinical status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CHAllergyIntoleranceConditionValueSet"
+        },
+        "name": "CH AllergyIntolerance Condition",
+        "description": "CH AllergyIntolerance condition value set. This value set includes codes from SNOMED Clinical Terms®  values  for values from the manifestation of reactions value set PLUS findings for the documentation of allergy or intolerances in conditions as problem-list or as encounter-diagnosis as well as its absence (no know allergies)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/allergyintolerance-criticality-supplement"
+        },
+        "name": "CH AllergyIntolerance Criticality Status",
+        "description": "Code supplement with translations of CHAllergyIntolerance criticality status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CHAllergyIntoleranceReactionManifestationValueSet"
+        },
+        "name": "CH AllergyIntolerance Reaction Manifestation",
+        "description": "CH AllergyIntolerance reaction manifestation value set, including codes values according to the Allergy Reaction (GPS) - IPS value set from SNOMED Clinical Terms®  for the documentation of manifestation of allergy or intolerance reactions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CHAllergyIntoleranceReactionSubstanceValueSet"
+        },
+        "name": "CH AllergyIntolerance Reaction Substance",
+        "description": "CH AllergyIntolerance reation substance value set. This value set includes codes from SNOMED Clinical Terms® substances for the documentation of substancies of allergy or intolerance reactions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/allergyintolerance-severity-supplement"
+        },
+        "name": "CH AllergyIntolerance Severity Status",
+        "description": "Code supplement with translations of CHAllergyIntolerance severity status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/allergyintolerance-type-supplement"
+        },
+        "name": "CH AllergyIntolerance Type",
+        "description": "Code supplement with translations of CHAllergyIntolerance type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/allergyintolerance-verification-supplement"
+        },
+        "name": "CH AllergyIntolerance Verification Status",
+        "description": "Code supplement with translations of CHAllergyIntolerance verification status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ch-vacd-myvaccines-cs"
+        },
+        "name": "CH VACD Old Swiss Vaccines",
+        "description": "Old vaccines codes earlier available in Switzerland.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ch-vacd-recommendation-categories-vs"
+        },
+        "name": "CH VACD Recommendation Categories for Immunizations",
+        "description": "Immunization recommendation categories.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ch-vacd-route-of-administration-vs"
+        },
+        "name": "CH VACD Route of Administration for Immunization",
+        "description": "The route of immunization administration codes. This list is only a sublist of the List used for eMedication.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ch-vacd-vaccines-snomedct-vs"
+        },
+        "name": "CH VACD Snomed CT for vaccine code",
+        "description": "The list of vaccine products in Snomed CT list.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ch-vacd-recommendation-categories-cs"
+        },
+        "name": "CH VACD Swiss Immunization Recommendation Categories",
+        "description": "Immunization recommendation categories available in Switzerland.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ch-vacd-recommendation-forecast-status-vs"
+        },
+        "name": "CH VACD Swiss Recommendation Forecast Status",
+        "description": "Immunization recommendation forecast status values.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ch-vacd-recommendation-forecast-status-cs"
+        },
+        "name": "CH VACD Swiss Recommendation Forecast Status",
+        "description": "Immunization recommendation forecast status values.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ch-vacd-ch-vaccination-plan-immunizations-vs"
+        },
+        "name": "CH VACD Swiss Vaccination Plan Immunizations",
+        "description": "Immunization procedures for recommendations according to the vaccination plan.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ch-vacd-swissmedic-cs"
+        },
+        "name": "CH VACD Swissmedic Authorized Vaccines",
+        "description": "The vaccines swissmedic has given an autorization number.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ch-vacd-vaccines-vs"
+        },
+        "name": "CH VACD Swissmedic code for vaccine code",
+        "description": "The list of vaccines available (Swissmedic authorized) or earlier available in Switzerland.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ch-vacd-targetdiseasesandillnessesundergoneforimmunization-vs"
+        },
+        "name": "CH VACD Target disease and illnesses undergone for immunization",
+        "description": "This valueset contains all entries defining target deseases or illnesses undergone for immunization reasons.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.756.5.30.1.127.3.10.14"
+        },
+        "description": "Role codes as per Annex 5 EPRO-FDHA, CH:ATC, version July 2019",
+        "exampleBoolean": false,
+        "name": "ch-ehealth-codesystem-agentRole"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.756.5.30.1.127.3.10.7"
+        },
+        "description": "Audit Trail Consumption Event Types for CH:ATC",
+        "exampleBoolean": false,
+        "name": "ch-ehealth-codesystem-atc"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.756.5.30.1.127.3.10.18"
+        },
+        "description": "Deletion codes as per supplement 1 to Annex 5 EPRO-FDHA.",
+        "exampleBoolean": false,
+        "name": "ch-ehealth-codesystem-eprdeletionstatus"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.756.5.30.1.127.3.10.10"
+        },
+        "description": "Document format as per Annex; EPRO-FDHA.\n      \t\tThis unambiguous code defines the format of the XDS document. Together with the mimetype, this should provide the potential consumer with sufficient information as to whether they are in a position to process the document.\n    \t",
+        "exampleBoolean": false,
+        "name": "ch-ehealth-codesystem-format"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.756.5.30.1.127.3.10.9"
+        },
+        "description": "HCProfessional.hcProfession",
+        "exampleBoolean": false,
+        "name": "ch-ehealth-codesystem-hpd"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.756.5.30.1.127.3.10.12"
+        },
+        "description": "Document language as per Annex 3 EPRO-FDHA. Defines the language in which the document was written.",
+        "exampleBoolean": false,
+        "name": "ch-ehealth-codesystem-language"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.756.5.30.1.127.3.5"
+        },
+        "description": "HCProfessional.hcSpecialisation",
+        "exampleBoolean": false,
+        "name": "ch-ehealth-codesystem-medreg"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.756.5.30.1.127.3.6"
+        },
+        "description": "Speciality of the author as per Annex 3.",
+        "exampleBoolean": false,
+        "name": "ch-ehealth-codesystem-nareg"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.756.5.30.1.127.3.10.5"
+        },
+        "description": "Purpose Of Use as per Annex 5 EPRO-FDHA, Extension 1.",
+        "exampleBoolean": false,
+        "name": "ch-ehealth-codesystem-purposeOfUse"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.756.5.30.1.127.3.10.6"
+        },
+        "description": "Role codes as per Annex 5 EPRO-FDHA, version July 2019",
+        "exampleBoolean": false,
+        "name": "ch-ehealth-codesystem-role"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ch-core-encounter-participation-type"
+        },
+        "description": "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter. In Switzerland the primary care physician is added to the extensible base ValueSet.",
+        "exampleBoolean": false,
+        "name": "ChCoreEncounterParticipationType"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ch-core-maritalstatus"
+        },
+        "description": "MaritalStatus combined by fhir and eCH-11. See [maritalData - Zivilstandsangaben eCH-11](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html) and/or [BFS Amtlicher Katalog der Merkmale](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html).",
+        "exampleBoolean": false,
+        "name": "ChCoreMaritalStatus"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ch-core-religion"
+        },
+        "description": "Religion combined by fhir and eCH-11",
+        "exampleBoolean": false,
+        "name": "ChCoreReligion"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.authorRole"
+        },
+        "description": "Role of the author.\n      This code defines the role of the author of the document. This is a sub-attribute of epd_xds_author.",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.authorRole"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.authorSpeciality"
+        },
+        "description": "Speciality of the author as per Annex 3.",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.authorSpeciality"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.classCode"
+        },
+        "description": "Document class as per EPRO-FDHA Annex 3",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.classCode"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.confidentialityCode"
+        },
+        "description": "Document confidentiality as per Annex; EPRO-FDHA.",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.confidentialityCode"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/documententry-confidentialitycode-to-fhir"
+        },
+        "description": "DocumentEntry.confidentialityCode to FHIR mapping",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.confidentialityCode to FHIR mapping"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.eventCodeList"
+        },
+        "description": "DocumentEntry.eventCodeList",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.eventCodeList"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.Ext.EprDeletionStatus"
+        },
+        "description": "Deletion codes as per supplement 1 to Annex 5 EPRO-FDHA.",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.Ext.EprDeletionStatus"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.formatCode"
+        },
+        "description": "Document format as per Annex; EPRO-FDHA.\n      \t\tThis unambiguous code defines the format of the XDS document. Together with the mimetype, this should provide the potential consumer with sufficient information as to whether they are in a position to process the document.\n    \t",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.formatCode"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.healthcareFacilityTypeCode"
+        },
+        "description": "Type of healthcare facility as per Annex 3; EPRO-FDHA.\n      This code describes the type of healthcare facility in which the document was compiled during the treatment process. In conjunction with the authorisation control, the patient can use this information to assign all documents from a specific type of healthcare facility to a specific confidentiality level in their rights and attributes, for example.",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.healthcareFacilityTypeCode"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.languageCode"
+        },
+        "description": "Document language as per Annex 3 EPRO-FDHA. Defines the language in which the document was written.",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.languageCode"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.mimeType"
+        },
+        "description": "MIME type of the document as per Annex; EPRO-FDHA.",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.mimeType"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.originalProviderRole"
+        },
+        "description": "DocumentEntry.originalProviderRole",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.originalProviderRole"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.practiceSettingCode"
+        },
+        "description": "Medical specialisation of the data captured in the document as per Annex 3; EPRO-FDHA.\n      This attribute assigns the contents of a document to a medical specialisation. It is conceivable that this information will assist the patient with setting or changing the confidentiality level of documents, which is relevant for controlling access.",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.practiceSettingCode"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.sourcePatientInfo.PID-8"
+        },
+        "description": "Patient’s gender as per Annex 3; EPRO-FDHA.",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.sourcePatientInfo.PID-8"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DocumentEntry.typeCode"
+        },
+        "description": "Type of document as per Annex 3 EPRO-FDHA.\r\n\n\r\nThe code defines a document’s type (e.g. discharge report, laboratory report). Each document type should be assigned to precisely one document class.",
+        "exampleBoolean": false,
+        "name": "DocumentEntry.typeCode"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/DocumentEntryClassCodeToDocumentEntryTypeCode"
+        },
+        "description": "Mapping DocumentEntryClassCodeToDocumentEntryTypeCode",
+        "exampleBoolean": false,
+        "name": "DocumentEntryClassCodeToDocumentEntryTypeCode"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-7-cantonabbreviation"
+        },
+        "name": "eCH-0007 Canton Abbreviation",
+        "description": "eCH-0007: Each municipality has a unique cantonal affiliation, which can be defined by the cantonal abbreviation commonly used in Switzerland.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-7-cantonflabbreviation"
+        },
+        "name": "eCH-0007 Canton Abbreviation incl. FL (Fürstentum Liechtenstein)",
+        "description": "eCH-0007: Analogous to cantonAbbreviation, but contains the entry 'FL' for the Principality of Liechtenstein in addition to the actual cantons. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ech-7-cantonflabbreviation"
+        },
+        "name": "eCH-0007 Canton Abbreviation incl. FL (Fürstentum Liechtenstein)",
+        "description": "eCH-0007 defines cantonAbbreviation/cantonFLAbbreviation (Kantonskürzel inkl. Fürstentum Liechtenstein), see [here](https://www.ech.ch/de/ech/ech-0007/6.0).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ech-46-emailcategory"
+        },
+        "description": "eCH-0046 defines different types for e-mail categories. See https://www.ech.ch/de/ech/ech-0046/5.0 4.3.1 emailCategory",
+        "exampleBoolean": false,
+        "name": "eCH-0046 Email Category"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-46-emailcategory"
+        },
+        "description": "eCH-0046 defines these types of e-mail categories",
+        "exampleBoolean": false,
+        "name": "eCH-0046 Email Category"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ech-46-emailcategory-to-fhir"
+        },
+        "description": "ConceptMap to show the mapping from eCH-0046 e-mail category to FHIR",
+        "exampleBoolean": false,
+        "name": "eCH-0046 Email Category to FHIR Mapping"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ech-46-internetcategory"
+        },
+        "description": "eCH-0046 defines different types for internet categories. See https://www.ech.ch/de/ech/ech-0046/5.0 4.5.1 internetCategory",
+        "exampleBoolean": false,
+        "name": "eCH-0046 Internet Category"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-46-internetcategory"
+        },
+        "description": "eCH-0046 defines these types of internet categories",
+        "exampleBoolean": false,
+        "name": "eCH-0046 Internet Category"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ech-46-internetcategory-to-fhir"
+        },
+        "description": "ConceptMap to show the mapping from eCH-0046 internet category to FHIR",
+        "exampleBoolean": false,
+        "name": "eCH-0046 Internet Category to FHIR Mapping"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ech-46-phonecategory"
+        },
+        "description": "eCH-0046 defines different types for phone categories. See https://www.ech.ch/de/ech/ech-0046/5.0 4.4.1 phoneNumberCategory",
+        "exampleBoolean": false,
+        "name": "eCH-0046 Phone Category"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-46-phonecategory"
+        },
+        "description": "eCH-0046 defines these types of phone categories",
+        "exampleBoolean": false,
+        "name": "eCH-0046 Phone Category"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ech-46-phonecategory-to-fhir"
+        },
+        "description": "ConceptMap to show the mapping from eCH-0046 phone category to FHIR",
+        "exampleBoolean": false,
+        "name": "eCH-0046 Phone Category to FHIR Mapping"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-10-linetype"
+        },
+        "description": "eCH-010 defines different address lines (addressLine1,2 and street)",
+        "exampleBoolean": false,
+        "name": "eCH-010 Address Line Type"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ech-10"
+        },
+        "description": "eCH-010 defines different Types for a postal address",
+        "exampleBoolean": false,
+        "name": "eCH-010 Types"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-11-firstnamedatatype"
+        },
+        "description": "eCH-011 defines different nameData Types, this ValueSet is the subset for the firstnames",
+        "exampleBoolean": false,
+        "name": "eCH-011 FirstNameDataTypes"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ech-11-maritaldata-separation"
+        },
+        "description": "eCH-011 defines different maritalData separation zypes. See [maritalData - Zivilstandsangaben eCH-11](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html) and/or [BFS Amtlicher Katalog der Merkmale](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html).",
+        "exampleBoolean": false,
+        "name": "eCH-011 MaritalData Separation"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-11-maritaldata-separation"
+        },
+        "description": "eCH-011 defines maritalData separation types",
+        "exampleBoolean": false,
+        "name": "eCH-011 MaritalData Separation"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ech-11-maritalstatus"
+        },
+        "description": "eCH-011 defines different maritalStatus Types. See [maritalData - Zivilstandsangaben eCH-11](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html) and/or [BFS Amtlicher Katalog der Merkmale](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html).",
+        "exampleBoolean": false,
+        "name": "eCH-011 MaritalStatus"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-11-maritalstatus"
+        },
+        "description": "eCH-011 defines maritalStaus Types",
+        "exampleBoolean": false,
+        "name": "eCH-011 MaritalStatus"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-11-namedatatype"
+        },
+        "description": "eCH-011 defines different nameData Types, this ValueSet is the subset for the family name",
+        "exampleBoolean": false,
+        "name": "eCH-011 NameDataTypes"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ech-11-religion"
+        },
+        "description": "eCH-011 defines different religionTypes. See https://ech.ch/de/ech/ech-0011/ (section 'religion – Konfessionszugehörigkeit')",
+        "exampleBoolean": false,
+        "name": "eCH-011 Religion"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ech-11-sex"
+        },
+        "description": "eCH-011 defines different sex Types. See https://www.ech.ch/vechweb/page?p=dossier&documentNumber=eCH-0011&documentVersion=8.13.3.5  3.3.3.3 sex",
+        "exampleBoolean": false,
+        "name": "eCH-011 Sex"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ech-11-sex"
+        },
+        "description": "eCH-011 defines these sex types",
+        "exampleBoolean": false,
+        "name": "eCH-011 Sex"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ech-11"
+        },
+        "description": "eCH-011 defines different Types like Names, contactAdress etc. They are further described from the [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.assetdetail.349276.html) in 'Amtlicher Katalog der Merkmale' (Official catalogue of characteristics), Copyright BFS, Neuchâtel 2014, ISBN 978-3-303-00504-0",
+        "exampleBoolean": false,
+        "name": "eCH-011 Types"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/edqm-administrationmethod"
+        },
+        "name": "EDQM - Administration Method",
+        "description": "ValueSet Administration method from EDQM, AME, see https://standardterms.edqm.eu/#",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/edqm-pharmaceuticaldoseform"
+        },
+        "description": "Valueset Pharmaceutical Dose Form from EDQM, PDF, export20.5.2021, see https://standardterms.edqm.eu/#",
+        "exampleBoolean": false,
+        "name": "EDQM - Pharmaceutical Dose Form"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/edqm-routeofadministration"
+        },
+        "description": "Valueset RouteOfAdministration from EDQM, ROA, export 1.6.2021, see https://standardterms.edqm.eu/#",
+        "exampleBoolean": false,
+        "name": "EDQM - RouteOfAdministration"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/edqm-standardterms"
+        },
+        "description": "EDQM - Standard Terms used in Switzerland (aggregations of codes of ValueSets Route of Administration, Dose Form and Administration Method, see original codes system defined in https://standardterms.edqm.eu/#)",
+        "exampleBoolean": false,
+        "name": "EDQM - Standard Terms"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EprAgentRole"
+        },
+        "description": "Role codes as per Annex 5 EPRO-FDHA, CH:ATC, version July 2019",
+        "exampleBoolean": false,
+        "name": "EprAgentRole"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EprAuditTrailConsumptionEventType"
+        },
+        "description": "Audit Trail Consumption Event Types for CH:ATC",
+        "exampleBoolean": false,
+        "name": "EprAuditTrailConsumptionEventType"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EprPurposeOfUse"
+        },
+        "description": "Purpose Of Use as per Annex 5 EPRO-FDHA, Extension 1.",
+        "exampleBoolean": false,
+        "name": "EprPurposeOfUse"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EprRole"
+        },
+        "description": "Role codes as per Annex 5 EPRO-FDHA, version July 2019",
+        "exampleBoolean": false,
+        "name": "EprRole"
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/epr-spid"
+        },
+        "description": "EPR-SPID: The Central Compensation Office (ZAS; CCO) assigns and manages the new patient identification number according to the EPRA (EPR-SPID), which is only linked internally in the CCO with the AHV number. It maintains the UPI identification database (Unique Personal Identifier Database), which the EPR communities may access. The law regulates how the the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be not stored in document repositories or document registries.",
+        "exampleBoolean": false,
+        "name": "EPR_SPID"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/event-timing"
+        },
+        "description": "Translations of concepts for event-timing",
+        "exampleBoolean": false,
+        "name": "EventTiming"
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/forum-datenaustausch-tariff"
+        },
+        "name": "forum-datenaustausch-tariff",
+        "description": "Identification for Forum Datenaustausch tariff types. \n\nThe detailed tariff list is avaible at this [url](https://www.forum-datenaustausch.ch/de/referenzdaten/)\n\nNaming Convention for fore each tariff type is:\n\nhttp://forum-datenaustausch.ch/tariff/[A-Z0-9]{3}\n",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/gln"
+        },
+        "description": "Each healthcare partner (natural or legal person) is referenced with a unique code of type GLN (former name: EAN code) of the [GS1](https://www.gs1.ch/de/home) system. See [refdata](https://www.refdata.ch/content/partner_d.aspx)",
+        "exampleBoolean": false,
+        "name": "GLN"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/HCProfessional.hcProfession"
+        },
+        "description": "HCProfessional.hcProfession",
+        "exampleBoolean": false,
+        "name": "HCProfessional.hcProfession"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/HCProfessional.hcSpecialisation"
+        },
+        "description": "HCProfessional.hcSpecialisation",
+        "exampleBoolean": false,
+        "name": "HCProfessional.hcSpecialisation"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/HCProfessionalHCProfessionSpecialisationMap"
+        },
+        "description": "Mapping HCProfessionalHCProfessionSpecialisationMap",
+        "exampleBoolean": false,
+        "name": "HCProfessionalHCProfessionSpecialisationMap"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihe-pharmaceuticaladvicestatuslist"
+        },
+        "description": "IHE Pharmaceutical Advice Status List",
+        "exampleBoolean": false,
+        "name": "IHE Pharmaceutical Advice Status List"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ihe-pharmaceuticaladvicestatuslist"
+        },
+        "description": "IHE Pharmaceutical Advice Status List",
+        "exampleBoolean": false,
+        "name": "IHE Pharmaceutical Advice Status List"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/maritalstatus-ech11-to-fhir"
+        },
+        "description": "MaritalStatus mapping from eCH-011 to FHIR. See [maritalData - Zivilstandsangaben eCH-11](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html) and/or [BFS Amtlicher Katalog der Merkmale](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html).",
+        "exampleBoolean": false,
+        "name": "MaritalStatus eCH-011 to FHIR mapping"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/sex-ech11-to-fhir"
+        },
+        "description": "Sex eCH-011 to FHIR mapping",
+        "exampleBoolean": false,
+        "name": "Sex eCH-011 to FHIR mapping"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ch-vacd-vaccines-sct-sm-cm"
+        },
+        "name": "Snomed CT VaccineCode  To SwissMedic VaccineCode",
+        "description": "Mappings from vaccine code to vaccine code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ch-vacd-vaccines-sct-targetdiseases-cm"
+        },
+        "name": "Snomed CT VaccineCode To TargetDisease Mapping",
+        "description": "Mappings from SnomedCT vaccine code to target disease according to the correcsponding valuesets",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/SubmissionSet.Author.AuthorRole"
+        },
+        "description": "SubmissionSet.author.authorRole",
+        "exampleBoolean": false,
+        "name": "SubmissionSet.Author.AuthorRole"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/SubmissionSet.contentTypeCode"
+        },
+        "description": "SubmissionSet.contentTypeCode",
+        "exampleBoolean": false,
+        "name": "SubmissionSet.contentTypeCode"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ch-vacd-vaccines-sm-sct-cm"
+        },
+        "name": "SwissMedic VaccineCode To Snomed CT VaccineCode",
+        "description": "Mappings from vaccine code to vaccine code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ch-vacd-targetdiseases-vaccines-cm"
+        },
+        "name": "TargetDisease To VaccineCode Mapping",
+        "description": "Mappings from target disease to vaccine code according to the correcsponding valuesets",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/v3-TimingEvent"
+        },
+        "description": "Translations of concepts for v3-TimingEvent",
+        "exampleBoolean": false,
+        "name": "TimingEvent"
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/uidb"
+        },
+        "description": "Unique IDentification Business (UIDB) number (in French, numéro d'IDentification suisse des Enterprises (IDE)) (in German, Schweizer Unternehmens-IDentifikationsnummer (UID)) (in Italian, numero d'IDentificazione svizzero delle Imprese (IDI))\n  Organizations Covered By System: All Companies/organizations registered in the public Swiss Registers such as the Swiss Register of Commerce, the Value Added Tax (VAT) register, the Social security agencies Registers, Cantons registers, etc., and publish in the UID Register.",
+        "exampleBoolean": false,
+        "name": "UIDB"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/UnitCode"
+        },
+        "description": "UnitCode",
+        "exampleBoolean": false,
+        "name": "UnitCode"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ch-vacd-vaccines-targetdiseases-cm"
+        },
+        "name": "VaccineCode To TargetDisease Mapping",
+        "description": "Mappings from vaccine code to target disease according to the correcsponding valuesets",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/zsr"
+        },
+        "description": "The ZSR number is issued to self-employed, natural or legal persons (organisations) who can and want to work at the expense of health insurance. \n                      See [Sasis](https://www.sasis.ch/de/779).\n                      German: ZSR (Zahlstellenregister),\n                      French: RCC (Registre des codes-créanciers),\n                      Italian: RCC (Registro dei codici creditori).",
+        "exampleBoolean": false,
+        "name": "ZSR"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "codesystems.html",
+          "title": "Code Systems",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "valuesets.html",
+          "title": "Value Sets",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "conceptmaps.html",
+          "title": "Concept Maps",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "namingsystems.html",
+          "title": "Naming Systems",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "changelog.html",
+          "title": "Changelog",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2019+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/codesystem"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/conceptmap"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/namingsystem"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/valueset"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "allow-extensible-warnings",
+        "value": "true"
+      },
+      {
+        "code": "display-warnings",
+        "value": "true"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.756.5.30.1.127.3.5"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.756.5.30.1.127.3.6"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.756.5.30.1.127.3.10.6"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.756.5.30.1.127.3.10.9"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.756.5.30.1.127.3.10.10"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.756.5.30.1.127.3.10.12"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.756.5.30.1.127.3.10.14"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.756.5.30.1.127.3.10.18"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.756.5.30.1.127.3.10.5"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.756.5.30.1.127.3.10.7"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:0.4.0.127.0.16.1.1.2.1"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.3.6.1.4.1.19376.1.9.2.1"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/ech-7-cantonflabbreviation"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-17-admitsource"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-18-admittype"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-19-admitrole"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-20-encounterclass"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-21-encountertype"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-27-dischargedecision"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-28-dischargedestination"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-29-dischargeencounter"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/ech-10"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/ech-11"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritaldata-separation"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/ech-11-sex"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/ech-11-religion"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/ech-46-emailcategory"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/ech-46-internetcategory"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/CodeSystem/ech-46-phonecategory"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ConceptMap/bfs-encounter-class-to-fhir"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ConceptMap/documententry-confidentialitycode-to-fhir"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ConceptMap/ech-46-emailcategory-to-fhir"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ConceptMap/ech-46-internetcategory-to-fhir"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ConceptMap/ech-46-phonecategory-to-fhir"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ConceptMap/sex-ech11-to-fhir"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-7-cantonabbreviation"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-7-cantonflabbreviation"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-17-admitsource"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-18-admittype"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-19-admitrole"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-20-encounterclass"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-21-encountertype"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-27-dischargedecision"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-28-dischargedestination"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-29-dischargeencounter"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ch-core-encounter-participation-type"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ch-core-maritalstatus"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ch-core-religion"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-10-linetype"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-11-firstnamedatatype"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-11-maritaldata-separation"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-11-maritalstatus"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-11-namedatatype"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-11-sex"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-46-emailcategory"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-46-internetcategory"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-core/ValueSet/ech-46-phonecategory"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-category-supplement"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-clinical-supplement"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-criticality-supplement"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-severity-supplement"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-type-supplement"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-verification-supplement"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-allergyintolerance/ValueSet/CHAllergyIntoleranceConditionValueSet"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-allergyintolerance/ValueSet/CHAllergyIntoleranceReactionManifestationValueSet"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-allergyintolerance/ValueSet/CHAllergyIntoleranceReactionSubstanceValueSet"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-allergyintolerance/ValueSet/CHAllergyIntoleranceValueSet"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-myvaccines-cs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-forecast-status-cs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-route-of-administration-vs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-targetdiseasesandillnessesundergoneforimmunization-vs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-snomedct-vs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-vs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-ch-vaccination-plan-immunizations-vs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-categories-vs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-forecast-status-vs"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ConceptMap/ch-vacd-targetdiseases-vaccines-cm"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ConceptMap/ch-vacd-vaccines-sct-sm-cm"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ConceptMap/ch-vacd-vaccines-sct-targetdiseases-cm"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ConceptMap/ch-vacd-vaccines-sm-sct-cm"
+      },
+      {
+        "code": "special-url",
+        "value": "http://fhir.ch/ig/ch-vacd/ConceptMap/ch-vacd-vaccines-targetdiseases-cm"
+      }
+    ]
+  }
+}

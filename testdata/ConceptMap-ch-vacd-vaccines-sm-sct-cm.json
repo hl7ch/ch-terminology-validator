@@ -1,0 +1,1568 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ch-vacd-vaccines-sm-sct-cm",
+  "url": "http://fhir.ch/ig/ch-term/ConceptMap/ch-vacd-vaccines-sm-sct-cm",
+  "name": "VaccineCodeSMToVaccineCodeSCT",
+  "title": "SwissMedic VaccineCode To Snomed CT VaccineCode",
+  "description": "Mappings from vaccine code to vaccine code",
+  "status": "draft",
+  "publisher": "eHealth Suisse",
+  "contact": [
+    {
+      "name": "eHealth Suisse",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.e-health-suisse.ch/"
+        }
+      ]
+    }
+  ],
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "experimental": false,
+  "sourceUri": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-vs",
+  "targetUri": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-snomedct-vs",
+  "group": [
+    {
+      "source": "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "683",
+          "display": "FSME-Immun 0.25 ml Junior",
+          "target": [
+            {
+              "code": "871719005",
+              "display": "Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "450",
+          "display": "FSME-Immun CC",
+          "target": [
+            {
+              "code": "871719005",
+              "display": "Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "656",
+          "display": "NeisVac-C",
+          "target": [
+            {
+              "code": "871866001",
+              "display": "Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "627",
+          "display": "Encepur N",
+          "target": [
+            {
+              "code": "871719005",
+              "display": "Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "628",
+          "display": "Encepur N Kinder / Enfants",
+          "target": [
+            {
+              "code": "871719005",
+              "display": "Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "572",
+          "display": "Epaxal",
+          "target": [
+            {
+              "code": "871751006",
+              "display": "Vaccine product containing only Hepatitis A virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "544",
+          "display": "Heprecomb",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "642",
+          "display": "Heprecomb Kinder",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "657",
+          "display": "Menjugate",
+          "target": [
+            {
+              "code": "871866001",
+              "display": "Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "533",
+          "display": "Moraten",
+          "target": [
+            {
+              "code": "871765008",
+              "display": "Vaccine product containing only Measles morbillivirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "555",
+          "display": "Orochol",
+          "target": [
+            {
+              "code": "991000221105",
+              "display": "Vaccine product containing only Vibrio cholerae antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "685",
+          "display": "Rabipur",
+          "target": [
+            {
+              "code": "871726005",
+              "display": "Vaccine product containing only Rabies lyssavirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "702",
+          "display": "Td-pur",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "686",
+          "display": "Td-Virelon",
+          "target": [
+            {
+              "code": "871837004",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "467",
+          "display": "Vivotif",
+          "target": [
+            {
+              "code": "961000221100",
+              "display": "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "637",
+          "display": "Boostrix",
+          "target": [
+            {
+              "code": "871875004",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "681",
+          "display": "Boostrix Polio",
+          "target": [
+            {
+              "code": "871878002",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "567",
+          "display": "Ditanrix",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "551",
+          "display": "Engerix-B 10",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "534",
+          "display": "Engerix-B 20",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "558",
+          "display": "Havrix 1440",
+          "target": [
+            {
+              "code": "871751006",
+              "display": "Vaccine product containing only Hepatitis A virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "599",
+          "display": "Havrix 720",
+          "target": [
+            {
+              "code": "871751006",
+              "display": "Vaccine product containing only Hepatitis A virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "603",
+          "display": "Hiberix",
+          "target": [
+            {
+              "code": "871764007",
+              "display": "Vaccine product containing only Haemophilus influenzae type B antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "638",
+          "display": "Infanrix DTPa-IPV",
+          "target": [
+            {
+              "code": "871878002",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "619",
+          "display": "Infanrix DTPa-IPV+Hib",
+          "target": [
+            {
+              "code": "871887006",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "640",
+          "display": "Infanrix hexa",
+          "target": [
+            {
+              "code": "871895005",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "669",
+          "display": "Poliorix",
+          "target": [
+            {
+              "code": "871739009",
+              "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "615",
+          "display": "Priorix",
+          "target": [
+            {
+              "code": "871831003",
+              "display": "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "592",
+          "display": "Twinrix 720/20",
+          "target": [
+            {
+              "code": "871803007",
+              "display": "Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "528",
+          "display": "Gen H-B-Vax 10",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "545",
+          "display": "HBVAXPRO 40",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "610",
+          "display": "Gen H-B-Vax 5",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "663",
+          "display": "HBVAXPRO 10",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "268",
+          "display": "MMR-II",
+          "target": [
+            {
+              "code": "871831003",
+              "display": "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "247",
+          "display": "Mumpsvax",
+          "target": [
+            {
+              "code": "871737006",
+              "display": "Vaccine product containing only Mumps orthorubulavirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "613",
+          "display": "Pentavac",
+          "target": [
+            {
+              "code": "871887006",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "509",
+          "display": "Pneumovax-23",
+          "target": [
+            {
+              "code": "1052328007",
+              "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "646",
+          "display": "Revaxis",
+          "target": [
+            {
+              "code": "871837004",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "520",
+          "display": "Stamaril",
+          "target": [
+            {
+              "code": "871717007",
+              "display": "Vaccine product containing only Yellow fever virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "612",
+          "display": "Tetravac",
+          "target": [
+            {
+              "code": "871878002",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "417",
+          "display": "Tollwut Impfstoff Mérieux",
+          "target": [
+            {
+              "code": "871726005",
+              "display": "Vaccine product containing only Rabies lyssavirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "654",
+          "display": "Meningitec",
+          "target": [
+            {
+              "code": "871866001",
+              "display": "Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "643",
+          "display": "Prevenar-7",
+          "target": [
+            {
+              "code": "1052328007",
+              "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "644",
+          "display": "Hexavac",
+          "target": [
+            {
+              "code": "871895005",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "711",
+          "display": "DiTe pediatric adsorbed",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "711-01",
+          "display": "Diphtherie- und Tetanus-Adsorbatimpfstoff für Kinder unter 8 Jahren",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "711-02",
+          "display": "Diphtherie- und Tetanus-Adsorbatimpfstoff für Erwachsene und Kinder ab 7 Jahren",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "704",
+          "display": "Dukoral",
+          "target": [
+            {
+              "code": "991000221105",
+              "display": "Vaccine product containing only Vibrio cholerae antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "483",
+          "display": "Rimevax",
+          "target": [
+            {
+              "code": "871765008",
+              "display": "Vaccine product containing only Measles morbillivirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "707",
+          "display": "Tetanol pur",
+          "target": [
+            {
+              "code": "871742003",
+              "display": "Vaccine product containing only Clostridium tetani antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "57735",
+          "display": "Gardasil",
+          "target": [
+            {
+              "code": "2001000221108",
+              "display": "Vaccine product containing only Human papillomavirus 6, 11, 16 and 18 antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "709",
+          "display": "Zostavax",
+          "target": [
+            {
+              "code": "1156183006",
+              "display": "Vaccine product containing only Human alphaherpesvirus 3 recombinant surface glycoprotein E antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "58158",
+          "display": "Priorix-Tetra",
+          "target": [
+            {
+              "code": "871908002",
+              "display": "Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "60150",
+          "display": "Rotarix",
+          "target": [
+            {
+              "code": "871761004",
+              "display": "Vaccine product containing only Rotavirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "703",
+          "display": "MMRVaxPro",
+          "target": [
+            {
+              "code": "871831003",
+              "display": "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "58506",
+          "display": "Measles vaccine live",
+          "target": [
+            {
+              "code": "871765008",
+              "display": "Vaccine product containing only Measles morbillivirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "57814",
+          "display": "Cervarix",
+          "target": [
+            {
+              "code": "2001000221108",
+              "display": "Vaccine product containing only Human papillomavirus 6, 11, 16 and 18 antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "60129",
+          "display": "Prevenar 13",
+          "target": [
+            {
+              "code": "1052328007",
+              "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "59147",
+          "display": "Ixiaro",
+          "target": [
+            {
+              "code": "871724008",
+              "display": "Vaccine product containing only Japanese encephalitis virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "62502",
+          "display": "Menveo",
+          "target": [
+            {
+              "code": "871866001",
+              "display": "Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "600",
+          "display": "DiTe Anatoxal Erwachsene / Adultes",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "690",
+          "display": "DiTe Anatoxal N Erwachsene / Adultes",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "689",
+          "display": "Te Anatoxal N",
+          "target": [
+            {
+              "code": "871742003",
+              "display": "Vaccine product containing only Clostridium tetani antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "699",
+          "display": "ProQuad",
+          "target": [
+            {
+              "code": "871908002",
+              "display": "Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "65387",
+          "display": "Gardasil 9",
+          "target": [
+            {
+              "code": "2001000221108",
+              "display": "Vaccine product containing only Human papillomavirus 6, 11, 16 and 18 antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "66940",
+          "display": "Vaxelis",
+          "target": [
+            {
+              "code": "871895005",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68267",
+          "display": "Spikevax (COVID-19 Vaccine, Moderna)",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68225",
+          "display": "Comirnaty (COVID-19 Vaccine, Pfizer)",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "67987",
+          "display": "Shingrix",
+          "target": [
+            {
+              "code": "1156183006",
+              "display": "Vaccine product containing only Human alphaherpesvirus 3 recombinant surface glycoprotein E antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68710-01",
+          "display": "Comirnaty® 30 Mikrogramm/Dosis",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68710-02",
+          "display": "Comirnaty® 10 Mikrogramm/Dosis",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68710-03",
+          "display": "Comirnaty® 3 Mikrogramm/Dosis",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "69009",
+          "display": "Spikevax Bivalent Original / Omicron",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68235",
+          "display": "COVID-19 Vaccine Janssen",
+          "target": [
+            {
+              "code": "29061000087103",
+              "display": "Vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68473",
+          "display": "Nuvaxovid 0.5 ml, Injektionsdispersion",
+          "target": [
+            {
+              "code": "1162643001",
+              "display": "Vaccine product containing only severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68110",
+          "display": "Adacel-Polio 0.5 ml",
+          "target": [
+            {
+              "code": "871878002",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68317",
+          "display": "Adacel 0.5 ml",
+          "target": [
+            {
+              "code": "871875004",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "69123",
+          "display": "Spikevax Bivalent Original / Omicron 10 mg/ml, Fertigspritze",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "69010",
+          "display": "Spikevax, Fertigspritze",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "69047",
+          "display": "Comirnaty® Original/Omicron BA.1 15/15 µg pro Dosis",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "69127",
+          "display": "Comirnaty Original/Omicron BA. 4-5 0.225 mg",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "69189",
+          "display": "Spikevax Bivalent Original / Omicron BA.4-5, dispersion for injection",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "69211",
+          "display": "Spikevax Bivalent Original / Omicron BA.4-5, Fertigspritze",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68752",
+          "display": "Vaxneuvance, Injektionssuspension",
+          "target": [
+            {
+              "code": "1252708008",
+              "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "69465",
+          "display": "Spikevax XBB.1.5 0.10 mg/ml, Dispersion zur Injektion",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "69484",
+          "display": "Spikevax XBB.1.5 0.10 mg/ml, Dispersion zur Injektion",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "69488",
+          "display": "Comirnaty Omicron XBB.1.5 (30 Mikrogramm)/Dosis, Injektionsdispersion",
+          "target": [
+            {
+              "code": "1119349007",
+              "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-myvaccines-cs",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "17",
+          "display": "Poliomyelitis Impfstoff Berna",
+          "target": [
+            {
+              "code": "871739009",
+              "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "25",
+          "display": "Vivotif L",
+          "target": [
+            {
+              "code": "961000221100",
+              "display": "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "35",
+          "display": "Infanrix DTPa",
+          "target": [
+            {
+              "code": "871875004",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "47",
+          "display": "Attenuvax",
+          "target": [
+            {
+              "code": "871765008",
+              "display": "Vaccine product containing only Measles morbillivirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53",
+          "display": "HBVAXPRO 5",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "55",
+          "display": "Meningokokken-Impfstoff A+C Mérieux",
+          "target": [
+            {
+              "code": "871866001",
+              "display": "Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "74",
+          "display": "Twinrix 360/10",
+          "target": [
+            {
+              "code": "871803007",
+              "display": "Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "75",
+          "display": "Pluserix",
+          "target": [
+            {
+              "code": "871831003",
+              "display": "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "76",
+          "display": "Acel Immune",
+          "target": [
+            {
+              "code": "871875004",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "78",
+          "display": "Act-Hib",
+          "target": [
+            {
+              "code": "871764007",
+              "display": "Vaccine product containing only Haemophilus influenzae type B antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "79",
+          "display": "Anatoxal DiTePer",
+          "target": [
+            {
+              "code": "871875004",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "80",
+          "display": "Anatoxal DiTe Erwachsene",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "81",
+          "display": "Anatoxal DiTe N Erwachsene",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "83",
+          "display": "Anatoxal Te",
+          "target": [
+            {
+              "code": "871742003",
+              "display": "Vaccine product containing only Clostridium tetani antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "84",
+          "display": "Anatoxal Te N",
+          "target": [
+            {
+              "code": "871742003",
+              "display": "Vaccine product containing only Clostridium tetani antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "86",
+          "display": "Arilvax",
+          "target": [
+            {
+              "code": "871717007",
+              "display": "Vaccine product containing only Yellow fever virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "92",
+          "display": "HibTiter",
+          "target": [
+            {
+              "code": "871764007",
+              "display": "Vaccine product containing only Haemophilus influenzae type B antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "94",
+          "display": "Lyssavac Berna",
+          "target": [
+            {
+              "code": "871726005",
+              "display": "Vaccine product containing only Rabies lyssavirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "97",
+          "display": "Mumaten",
+          "target": [
+            {
+              "code": "871737006",
+              "display": "Vaccine product containing only Mumps orthorubulavirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "98",
+          "display": "Pedvax",
+          "target": [
+            {
+              "code": "871764007",
+              "display": "Vaccine product containing only Haemophilus influenzae type B antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "99",
+          "display": "Pentacoq",
+          "target": [
+            {
+              "code": "871887006",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "100",
+          "display": "Pnu-Immune",
+          "target": [
+            {
+              "code": "1052328007",
+              "display": "Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "101",
+          "display": "Polio Salk",
+          "target": [
+            {
+              "code": "871739009",
+              "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "102",
+          "display": "Polio Sabin",
+          "target": [
+            {
+              "code": "871739009",
+              "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "103",
+          "display": "Poloral",
+          "target": [
+            {
+              "code": "871739009",
+              "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "106",
+          "display": "Tetracoq",
+          "target": [
+            {
+              "code": "871878002",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110",
+          "display": "Vaqta",
+          "target": [
+            {
+              "code": "871751006",
+              "display": "Vaccine product containing only Hepatitis A virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "115",
+          "display": "Havrix 360",
+          "target": [
+            {
+              "code": "871751006",
+              "display": "Vaccine product containing only Hepatitis A virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "118",
+          "display": "Hevac B",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "119",
+          "display": "MMR-I",
+          "target": [
+            {
+              "code": "871831003",
+              "display": "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "120",
+          "display": "Moruman",
+          "target": [
+            {
+              "code": "871765008",
+              "display": "Vaccine product containing only Measles morbillivirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "123",
+          "display": "Trimovax",
+          "target": [
+            {
+              "code": "871831003",
+              "display": "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "126",
+          "display": "Ditanrix pediatric",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "128",
+          "display": "FSME-Immun Injekt",
+          "target": [
+            {
+              "code": "871719005",
+              "display": "Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "133",
+          "display": "ProHibit",
+          "target": [
+            {
+              "code": "871764007",
+              "display": "Vaccine product containing only Haemophilus influenzae type B antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "134",
+          "display": "Anatoxal DiTe Kinder",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "138",
+          "display": "K1, K2, K3",
+          "target": [
+            {
+              "code": "871739009",
+              "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "139",
+          "display": "Koprowski",
+          "target": [
+            {
+              "code": "871739009",
+              "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "143",
+          "display": "TAB oral",
+          "target": [
+            {
+              "code": "961000221100",
+              "display": "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "147",
+          "display": "Polio Koprowski (K1-K3)",
+          "target": [
+            {
+              "code": "871739009",
+              "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "148",
+          "display": "Polio Lilly",
+          "target": [
+            {
+              "code": "871739009",
+              "display": "Vaccine product containing only Human poliovirus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "154",
+          "display": "DiTe Anatoxal Kinder / Enfants",
+          "target": [
+            {
+              "code": "871826000",
+              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "155",
+          "display": "DiTePer Anatoxal",
+          "target": [
+            {
+              "code": "871875004",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "162",
+          "display": "HBVAX DNA 5",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "163",
+          "display": "HBVAX DNA 10",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "164",
+          "display": "HBVAX DNA 40",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "165",
+          "display": "Havrix junior",
+          "target": [
+            {
+              "code": "871751006",
+              "display": "Vaccine product containing only Hepatitis A virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "166",
+          "display": "Infanrix",
+          "target": [
+            {
+              "code": "871875004",
+              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "168",
+          "display": "Tanrix",
+          "target": [
+            {
+              "code": "871742003",
+              "display": "Vaccine product containing only Clostridium tetani antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "170",
+          "display": "Engerix-B 40",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "172",
+          "display": "Hepavax",
+          "target": [
+            {
+              "code": "871822003",
+              "display": "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "16",
+          "display": "Orochol E",
+          "target": [
+            {
+              "code": "991000221105",
+              "display": "Vaccine product containing only Vibrio cholerae antigen (medicinal product)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

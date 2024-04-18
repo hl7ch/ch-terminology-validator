@@ -1,0 +1,704 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "CHAllergyIntoleranceReactionManifestationValueSet",
+  "id": "CHAllergyIntoleranceReactionManifestationValueSet",
+  "title": "CH AllergyIntolerance Reaction Manifestation",
+  "description": "CH AllergyIntolerance reaction manifestation value set, including codes values according to the Allergy Reaction (GPS) - IPS value set from SNOMED Clinical Terms®  for the documentation of manifestation of allergy or intolerance reactions",
+  "url": "http://fhir.ch/ig/ch-allergyintolerance/ValueSet/CHAllergyIntoleranceReactionManifestationValueSet",
+  "meta": {
+    "source": "http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.82--20200925110235"
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "422400008",
+            "display": "Vomiting (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Vomiting"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vomissement"
+              },
+              {
+                "language": "de-CH",
+                "value": "Erbrechen"
+              },
+              {
+                "language": "it-CH",
+                "value": "vomito"
+              }
+            ]
+          },
+          {
+            "code": "4386001",
+            "display": "Bronchospasm (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Bronchospasm"
+              },
+              {
+                "language": "fr-CH",
+                "value": "bronchospasme"
+              },
+              {
+                "language": "de-CH",
+                "value": "Bronchospasmus"
+              },
+              {
+                "language": "it-CH",
+                "value": "broncospasmo"
+              }
+            ]
+          },
+          {
+            "code": "9826008",
+            "display": "Conjunctivitis (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Conjunctivitis"
+              },
+              {
+                "language": "fr-CH",
+                "value": "conjonctivite"
+              },
+              {
+                "language": "de-CH",
+                "value": "Konjunktivitis"
+              },
+              {
+                "language": "it-CH",
+                "value": "congiuntivite"
+              }
+            ]
+          },
+          {
+            "code": "23924001",
+            "display": "Tight chest (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Tight chest"
+              },
+              {
+                "language": "fr-CH",
+                "value": "oppression thoracique"
+              },
+              {
+                "language": "de-CH",
+                "value": "Engegefühl im Brustkorb"
+              },
+              {
+                "language": "it-CH",
+                "value": "oppressione toracica"
+              }
+            ]
+          },
+          {
+            "code": "24079001",
+            "display": "Atopic dermatitis (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Atopic dermatitis"
+              },
+              {
+                "language": "fr-CH",
+                "value": "dermite atopique"
+              },
+              {
+                "language": "de-CH",
+                "value": "Atopische Dermatitis"
+              },
+              {
+                "language": "it-CH",
+                "value": "dermatite atopica"
+              }
+            ]
+          },
+          {
+            "code": "31996006",
+            "display": "Vasculitis (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Vasculitis"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vasculite"
+              },
+              {
+                "language": "de-CH",
+                "value": "Vaskulitis"
+              },
+              {
+                "language": "it-CH",
+                "value": "vasculite"
+              }
+            ]
+          },
+          {
+            "code": "39579001",
+            "display": "Anaphylaxis (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Anaphylaxis"
+              },
+              {
+                "language": "fr-CH",
+                "value": "anaphylaxie"
+              },
+              {
+                "language": "de-CH",
+                "value": "Anaphylaxie"
+              },
+              {
+                "language": "it-CH",
+                "value": "anafilassi"
+              }
+            ]
+          },
+          {
+            "code": "41291007",
+            "display": "Angioedema (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Angioedema"
+              },
+              {
+                "language": "fr-CH",
+                "value": "angio-œdème"
+              },
+              {
+                "language": "de-CH",
+                "value": "Angioödem"
+              },
+              {
+                "language": "it-CH",
+                "value": "angioedema"
+              }
+            ]
+          },
+          {
+            "code": "43116000",
+            "display": "Eczema (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Eczema"
+              },
+              {
+                "language": "fr-CH",
+                "value": "eczéma"
+              },
+              {
+                "language": "de-CH",
+                "value": "Ekzem"
+              },
+              {
+                "language": "it-CH",
+                "value": "eczema"
+              }
+            ]
+          },
+          {
+            "code": "49727002",
+            "display": "Cough (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Cough"
+              },
+              {
+                "language": "fr-CH",
+                "value": "toux"
+              },
+              {
+                "language": "de-CH",
+                "value": "Husten"
+              },
+              {
+                "language": "it-CH",
+                "value": "tosse"
+              }
+            ]
+          },
+          {
+            "code": "51599000",
+            "display": "Edema of larynx (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Edema of larynx"
+              },
+              {
+                "language": "fr-CH",
+                "value": "œdème du larynx"
+              },
+              {
+                "language": "de-CH",
+                "value": "Kehlkopfödem"
+              },
+              {
+                "language": "it-CH",
+                "value": "edema della laringe"
+              }
+            ]
+          },
+          {
+            "code": "62315008",
+            "display": "Diarrhea (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Diarrhea"
+              },
+              {
+                "language": "fr-CH",
+                "value": "diarrhée"
+              },
+              {
+                "language": "de-CH",
+                "value": "Diarrhöe"
+              },
+              {
+                "language": "it-CH",
+                "value": "diarrea"
+              }
+            ]
+          },
+          {
+            "code": "70076002",
+            "display": "Rhinitis (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Rhinitis"
+              },
+              {
+                "language": "fr-CH",
+                "value": "rhinite"
+              },
+              {
+                "language": "de-CH",
+                "value": "Rhinitis"
+              },
+              {
+                "language": "it-CH",
+                "value": "rinite"
+              }
+            ]
+          },
+          {
+            "code": "73442001",
+            "display": "Stevens-Johnson syndrome (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Stevens-Johnson syndrome"
+              },
+              {
+                "language": "fr-CH",
+                "value": "syndrome de Stevens-Johnson"
+              },
+              {
+                "language": "de-CH",
+                "value": "Stevens-Johnson-Syndrom"
+              },
+              {
+                "language": "it-CH",
+                "value": "sindrome di Stevens-Johnson"
+              }
+            ]
+          },
+          {
+            "code": "76067001",
+            "display": "Sneezing (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Sneezing"
+              },
+              {
+                "language": "fr-CH",
+                "value": "éternuement"
+              },
+              {
+                "language": "de-CH",
+                "value": "Niesen"
+              },
+              {
+                "language": "it-CH",
+                "value": "starnuto"
+              }
+            ]
+          },
+          {
+            "code": "91175000",
+            "display": "Seizure (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Seizure"
+              },
+              {
+                "language": "fr-CH",
+                "value": "convulsion"
+              },
+              {
+                "language": "de-CH",
+                "value": "Konvulsion"
+              },
+              {
+                "language": "it-CH",
+                "value": "convulsione"
+              }
+            ]
+          },
+          {
+            "code": "126485001",
+            "display": "Urticaria (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Urticaria"
+              },
+              {
+                "language": "fr-CH",
+                "value": "urticaire"
+              },
+              {
+                "language": "de-CH",
+                "value": "Urtikaria"
+              },
+              {
+                "language": "it-CH",
+                "value": "orticaria"
+              }
+            ]
+          },
+          {
+            "code": "162290004",
+            "display": "Dry eyes (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Dry eyes"
+              },
+              {
+                "language": "fr-CH",
+                "value": "sècheresse oculaire"
+              },
+              {
+                "language": "de-CH",
+                "value": "Trockene Augen"
+              },
+              {
+                "language": "it-CH",
+                "value": "secchezza oculare"
+              }
+            ]
+          },
+          {
+            "code": "195967001",
+            "display": "Asthma (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Asthma"
+              },
+              {
+                "language": "fr-CH",
+                "value": "asthme"
+              },
+              {
+                "language": "de-CH",
+                "value": "Asthma"
+              },
+              {
+                "language": "it-CH",
+                "value": "asma"
+              }
+            ]
+          },
+          {
+            "code": "247472004",
+            "display": "Wheal (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Wheal"
+              },
+              {
+                "language": "fr-CH",
+                "value": "éruption urticaire"
+              },
+              {
+                "language": "de-CH",
+                "value": "Urtikarielles Exanthem"
+              },
+              {
+                "language": "it-CH",
+                "value": "eruzione orticaria"
+              }
+            ]
+          },
+          {
+            "code": "267036007",
+            "display": "Dyspnea (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Dyspnea"
+              },
+              {
+                "language": "fr-CH",
+                "value": "dyspnée"
+              },
+              {
+                "language": "de-CH",
+                "value": "Dyspnoe"
+              },
+              {
+                "language": "it-CH",
+                "value": "dispnea"
+              }
+            ]
+          },
+          {
+            "code": "271757001",
+            "display": "Papular eruption (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Papular eruption"
+              },
+              {
+                "language": "fr-CH",
+                "value": "éruption papuleuse"
+              },
+              {
+                "language": "de-CH",
+                "value": "Papulöses Exanthem"
+              },
+              {
+                "language": "it-CH",
+                "value": "eruzione papulare"
+              }
+            ]
+          },
+          {
+            "code": "271759003",
+            "display": "Bullous eruption (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Bullous eruption"
+              },
+              {
+                "language": "fr-CH",
+                "value": "éruption bulleuse"
+              },
+              {
+                "language": "de-CH",
+                "value": "Bullöses Exanthem"
+              },
+              {
+                "language": "it-CH",
+                "value": "eruzione bollosa"
+              }
+            ]
+          },
+          {
+            "code": "271807003",
+            "display": "Eruption of skin (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Eruption of skin"
+              },
+              {
+                "language": "fr-CH",
+                "value": "éruption cutanée"
+              },
+              {
+                "language": "de-CH",
+                "value": "Hautausschlag"
+              },
+              {
+                "language": "it-CH",
+                "value": "eruzione cutanea"
+              }
+            ]
+          },
+          {
+            "code": "359610006",
+            "display": "Ocular hyperemia (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Ocular hyperemia"
+              },
+              {
+                "language": "fr-CH",
+                "value": "hyperémie oculaire"
+              },
+              {
+                "language": "de-CH",
+                "value": "Okuläre Hyperämie"
+              },
+              {
+                "language": "it-CH",
+                "value": "iperemia oculare"
+              }
+            ]
+          },
+          {
+            "code": "410430005",
+            "display": "Cardiorespiratory arrest (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Cardiorespiratory arrest"
+              },
+              {
+                "language": "fr-CH",
+                "value": "arrêt cardiorespiratoire"
+              },
+              {
+                "language": "de-CH",
+                "value": "Kardiorespiratorischer Stillstand"
+              },
+              {
+                "language": "it-CH",
+                "value": "arresto cardiorespiratorio"
+              }
+            ]
+          },
+          {
+            "code": "418363000",
+            "display": "Itching of skin (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Itching of skin"
+              },
+              {
+                "language": "fr-CH",
+                "value": "prurit de la peau"
+              },
+              {
+                "language": "de-CH",
+                "value": "Pruritus"
+              },
+              {
+                "language": "it-CH",
+                "value": "prurito cutaneo"
+              }
+            ]
+          },
+          {
+            "code": "422587007",
+            "display": "Nausea (finding)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Nausea"
+              },
+              {
+                "language": "fr-CH",
+                "value": "nausées"
+              },
+              {
+                "language": "de-CH",
+                "value": "Nausea"
+              },
+              {
+                "language": "it-CH",
+                "value": "nausea"
+              }
+            ]
+          },
+          {
+            "code": "698247007",
+            "display": "Cardiac arrhythmia (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Cardiac arrhythmia"
+              },
+              {
+                "language": "fr-CH",
+                "value": "arythmie cardiaque"
+              },
+              {
+                "language": "de-CH",
+                "value": "Herzrhythmusstörung"
+              },
+              {
+                "language": "it-CH",
+                "value": "aritmia cardiaca"
+              }
+            ]
+          },
+          {
+            "code": "702809001",
+            "display": "Drug reaction with eosinophilia and systemic symptoms (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Drug reaction with eosinophilia and systemic symptoms"
+              },
+              {
+                "language": "fr-CH",
+                "value": "réaction médicamenteuse avec éosinophilie et symptômes systémiques"
+              },
+              {
+                "language": "de-CH",
+                "value": "Medikamentenreaktion mit Eosinophilie und systemischen Symptomen"
+              },
+              {
+                "language": "it-CH",
+                "value": "reazione al medicamento con eosinofilia e sintomi sistemici"
+              }
+            ]
+          },
+          {
+            "code": "768962006",
+            "display": "Lyell syndrome (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Lyell syndrome"
+              },
+              {
+                "language": "fr-CH",
+                "value": "syndrome de Lyell"
+              },
+              {
+                "language": "de-CH",
+                "value": "Lyell-Syndrom"
+              },
+              {
+                "language": "it-CH",
+                "value": "sindrome di Lyell"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

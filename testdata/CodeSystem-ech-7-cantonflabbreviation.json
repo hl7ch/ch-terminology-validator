@@ -1,0 +1,96 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ECH007CantonFLAbbreviation",
+  "id": "ech-7-cantonflabbreviation",
+  "title": "eCH-0007 Canton Abbreviation incl. FL (Fürstentum Liechtenstein)",
+  "description": "eCH-0007 defines cantonAbbreviation/cantonFLAbbreviation (Kantonskürzel inkl. Fürstentum Liechtenstein), see [here](https://www.ech.ch/de/ech/ech-0007/6.0).",
+  "url": "http://fhir.ch/ig/ch-core/CodeSystem/ech-7-cantonflabbreviation",
+  "concept": [
+    {
+      "code": "AG"
+    },
+    {
+      "code": "AR"
+    },
+    {
+      "code": "AI"
+    },
+    {
+      "code": "BL"
+    },
+    {
+      "code": "BS"
+    },
+    {
+      "code": "BE"
+    },
+    {
+      "code": "FR"
+    },
+    {
+      "code": "GE"
+    },
+    {
+      "code": "GL"
+    },
+    {
+      "code": "GR"
+    },
+    {
+      "code": "JU"
+    },
+    {
+      "code": "LU"
+    },
+    {
+      "code": "NE"
+    },
+    {
+      "code": "NW"
+    },
+    {
+      "code": "OW"
+    },
+    {
+      "code": "SH"
+    },
+    {
+      "code": "SZ"
+    },
+    {
+      "code": "SO"
+    },
+    {
+      "code": "SG"
+    },
+    {
+      "code": "TI"
+    },
+    {
+      "code": "TG"
+    },
+    {
+      "code": "UR"
+    },
+    {
+      "code": "VD"
+    },
+    {
+      "code": "VS"
+    },
+    {
+      "code": "ZG"
+    },
+    {
+      "code": "ZH"
+    },
+    {
+      "code": "FL"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 27
+}

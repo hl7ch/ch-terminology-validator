@@ -1,0 +1,2126 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "OldSwissVaccinesCodesystem",
+  "id": "ch-vacd-myvaccines-cs",
+  "title": "CH VACD Old Swiss Vaccines",
+  "description": "Old vaccines codes earlier available in Switzerland.",
+  "url": "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-myvaccines-cs",
+  "concept": [
+    {
+      "code": "14",
+      "display": "MoRu-Viraten",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "MoRu-Viraten"
+        },
+        {
+          "language": "fr-CH",
+          "value": "MoRu-Viraten"
+        },
+        {
+          "language": "it-CH",
+          "value": "MoRu-Viraten"
+        },
+        {
+          "language": "rm-CH",
+          "value": "MoRu-Viraten"
+        },
+        {
+          "language": "en-US",
+          "value": "MoRu-Viraten"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "Poliomyelitis Impfstoff Berna",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Poliomyelitis Impfstoff Berna"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Poliomyelitis vaccin Berna"
+        },
+        {
+          "language": "it-CH",
+          "value": "Poliomyelitis vaccino Berna"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Poliomyelitis vaccin Berna"
+        },
+        {
+          "language": "en-US",
+          "value": "Poliomyelitis vaccine Berna"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "display": "Triviraten",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Triviraten"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Triviraten"
+        },
+        {
+          "language": "it-CH",
+          "value": "Triviraten"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Triviraten"
+        },
+        {
+          "language": "en-US",
+          "value": "Triviraten"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "display": "Vivotif L",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Vivotif L"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Vivotif L"
+        },
+        {
+          "language": "it-CH",
+          "value": "Vivotif L"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Vivotif L"
+        },
+        {
+          "language": "en-US",
+          "value": "Vivotif L"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "display": "Infanrix DTPa",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Infanrix DTPa"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Infanrix DTPa"
+        },
+        {
+          "language": "it-CH",
+          "value": "Infanrix DTPa"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Infanrix DTPa"
+        },
+        {
+          "language": "en-US",
+          "value": "Infanrix DTPa"
+        }
+      ]
+    },
+    {
+      "code": "39",
+      "display": "Infanrix Penta",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Infanrix Penta"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Infanrix Penta"
+        },
+        {
+          "language": "it-CH",
+          "value": "Infanrix Penta"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Infanrix Penta"
+        },
+        {
+          "language": "en-US",
+          "value": "Infanrix Penta"
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "display": "Attenuvax",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Attenuvax"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Attenuvax"
+        },
+        {
+          "language": "it-CH",
+          "value": "Attenuvax"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Attenuvax"
+        },
+        {
+          "language": "en-US",
+          "value": "Attenuvax"
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "display": "BCG",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "BCG"
+        },
+        {
+          "language": "fr-CH",
+          "value": "BCG"
+        },
+        {
+          "language": "it-CH",
+          "value": "BCG"
+        },
+        {
+          "language": "rm-CH",
+          "value": "BCG"
+        },
+        {
+          "language": "en-US",
+          "value": "BCG"
+        }
+      ]
+    },
+    {
+      "code": "53",
+      "display": "HBVAXPRO 5",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "HBVAXPRO 5"
+        },
+        {
+          "language": "fr-CH",
+          "value": "HBVAXPRO 5"
+        },
+        {
+          "language": "it-CH",
+          "value": "HBVAXPRO 5"
+        },
+        {
+          "language": "rm-CH",
+          "value": "HBVAXPRO 5"
+        },
+        {
+          "language": "en-US",
+          "value": "HBVAXPRO 5"
+        }
+      ]
+    },
+    {
+      "code": "55",
+      "display": "Meningokokken-Impfstoff A+C Mérieux",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Meningokokken-Impfstoff A+C Mérieux"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Vaccin méningococcique A+C Mérieux"
+        },
+        {
+          "language": "it-CH",
+          "value": "Vaccino meningococcico A+C Mérieux"
+        },
+        {
+          "language": "rm-CH",
+          "value": "vaccin da meningokokken A+C Mérieux"
+        },
+        {
+          "language": "en-US",
+          "value": "Meningococcal vaccine A+C Mérieux"
+        }
+      ]
+    },
+    {
+      "code": "56",
+      "display": "Meruvax",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Meruvax"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Meruvax"
+        },
+        {
+          "language": "it-CH",
+          "value": "Meruvax"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Meruvax"
+        },
+        {
+          "language": "en-US",
+          "value": "Meruvax"
+        }
+      ]
+    },
+    {
+      "code": "73",
+      "display": "Infanrix DTPa+Hib",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Infanrix DTPa+Hib"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Infanrix DTPa+Hib"
+        },
+        {
+          "language": "it-CH",
+          "value": "Infanrix DTPa+Hib"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Infanrix DTPa+Hib"
+        },
+        {
+          "language": "en-US",
+          "value": "Infanrix DTPa+Hib"
+        }
+      ]
+    },
+    {
+      "code": "74",
+      "display": "Twinrix 360/10",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Twinrix 360/10"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Twinrix 360/10"
+        },
+        {
+          "language": "it-CH",
+          "value": "Twinrix 360/10"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Twinrix 360/10"
+        },
+        {
+          "language": "en-US",
+          "value": "Twinrix 360/10"
+        }
+      ]
+    },
+    {
+      "code": "75",
+      "display": "Pluserix",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Pluserix"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Pluserix"
+        },
+        {
+          "language": "it-CH",
+          "value": "Pluserix"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Pluserix"
+        },
+        {
+          "language": "en-US",
+          "value": "Pluserix"
+        }
+      ]
+    },
+    {
+      "code": "76",
+      "display": "Acel Immune",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Acel Immune"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Acel Immune"
+        },
+        {
+          "language": "it-CH",
+          "value": "Acel Immune"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Acel Immune"
+        },
+        {
+          "language": "en-US",
+          "value": "Acel Immune"
+        }
+      ]
+    },
+    {
+      "code": "77",
+      "display": "Acel P",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Acel P"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Acel P"
+        },
+        {
+          "language": "it-CH",
+          "value": "Acel P"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Acel P"
+        },
+        {
+          "language": "en-US",
+          "value": "Acel P"
+        }
+      ]
+    },
+    {
+      "code": "78",
+      "display": "Act-Hib",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Act-Hib"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Act-Hib"
+        },
+        {
+          "language": "it-CH",
+          "value": "Act-Hib"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Act-Hib"
+        },
+        {
+          "language": "en-US",
+          "value": "Act-Hib"
+        }
+      ]
+    },
+    {
+      "code": "79",
+      "display": "Anatoxal DiTePer",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Anatoxal DiTePer"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Anatoxal DiTePer"
+        },
+        {
+          "language": "it-CH",
+          "value": "Anatoxal DiTePer"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Anatoxal DiTePer"
+        },
+        {
+          "language": "en-US",
+          "value": "Anatoxal DiTePer"
+        }
+      ]
+    },
+    {
+      "code": "80",
+      "display": "Anatoxal DiTe Erwachsene",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Anatoxal DiTe Erwachsene"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Anatoxal DiTe adultes"
+        },
+        {
+          "language": "it-CH",
+          "value": "Anatoxal DiTe adulti"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Anatoxal DiTe persunas creschidas"
+        },
+        {
+          "language": "en-US",
+          "value": "Anatoxal DiTe adults"
+        }
+      ]
+    },
+    {
+      "code": "81",
+      "display": "Anatoxal DiTe N Erwachsene",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Anatoxal DiTe N Erwachsene"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Anatoxal DiTe N adultes"
+        },
+        {
+          "language": "it-CH",
+          "value": "Anatoxal DiTe N adulti"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Anatoxal DiTe N persunas creschidas"
+        },
+        {
+          "language": "en-US",
+          "value": "Anatoxal DiTe N adults"
+        }
+      ]
+    },
+    {
+      "code": "82",
+      "display": "Anatoxal Di",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Anatoxal Di"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Anatoxal Di"
+        },
+        {
+          "language": "it-CH",
+          "value": "Anatoxal Di"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Anatoxal Di"
+        },
+        {
+          "language": "en-US",
+          "value": "Anatoxal Di"
+        }
+      ]
+    },
+    {
+      "code": "83",
+      "display": "Anatoxal Te",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Anatoxal Te"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Anatoxal Te"
+        },
+        {
+          "language": "it-CH",
+          "value": "Anatoxal Te"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Anatoxal Te"
+        },
+        {
+          "language": "en-US",
+          "value": "Anatoxal Te"
+        }
+      ]
+    },
+    {
+      "code": "84",
+      "display": "Anatoxal Te N",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Anatoxal Te N"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Anatoxal Te N"
+        },
+        {
+          "language": "it-CH",
+          "value": "Anatoxal Te N"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Anatoxal Te N"
+        },
+        {
+          "language": "en-US",
+          "value": "Anatoxal Te N"
+        }
+      ]
+    },
+    {
+      "code": "86",
+      "display": "Arilvax",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Arilvax"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Arilvax"
+        },
+        {
+          "language": "it-CH",
+          "value": "Arilvax"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Arilvax"
+        },
+        {
+          "language": "en-US",
+          "value": "Arilvax"
+        }
+      ]
+    },
+    {
+      "code": "87",
+      "display": "BCG Vaccin Mérieux",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "BCG Vaccin Mérieux"
+        },
+        {
+          "language": "fr-CH",
+          "value": "BCG Vaccin Mérieux"
+        },
+        {
+          "language": "it-CH",
+          "value": "BCG Vaccin Mérieux"
+        },
+        {
+          "language": "rm-CH",
+          "value": "BCG Vaccin Mérieux"
+        },
+        {
+          "language": "en-US",
+          "value": "BCG Vaccin Mérieux"
+        }
+      ]
+    },
+    {
+      "code": "88",
+      "display": "Biviraten",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Biviraten"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Biviraten"
+        },
+        {
+          "language": "it-CH",
+          "value": "Biviraten"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Biviraten"
+        },
+        {
+          "language": "en-US",
+          "value": "Biviraten"
+        }
+      ]
+    },
+    {
+      "code": "91",
+      "display": "Ervevax",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Ervevax"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Ervevax"
+        },
+        {
+          "language": "it-CH",
+          "value": "Ervevax"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Ervevax"
+        },
+        {
+          "language": "en-US",
+          "value": "Ervevax"
+        }
+      ]
+    },
+    {
+      "code": "92",
+      "display": "HibTiter",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "HibTiter"
+        },
+        {
+          "language": "fr-CH",
+          "value": "HibTiter"
+        },
+        {
+          "language": "it-CH",
+          "value": "HibTiter"
+        },
+        {
+          "language": "rm-CH",
+          "value": "HibTiter"
+        },
+        {
+          "language": "en-US",
+          "value": "HibTiter"
+        }
+      ]
+    },
+    {
+      "code": "93",
+      "display": "Infanrix DTPa-HBV",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Infanrix DTPa-HBV"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Infanrix DTPa-HBV"
+        },
+        {
+          "language": "it-CH",
+          "value": "Infanrix DTPa-HBV"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Infanrix DTPa-HBV"
+        },
+        {
+          "language": "en-US",
+          "value": "Infanrix DTPa-HBV"
+        }
+      ]
+    },
+    {
+      "code": "94",
+      "display": "Lyssavac Berna",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Lyssavac Berna"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Lyssavac Berna"
+        },
+        {
+          "language": "it-CH",
+          "value": "Lyssavac Berna"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Lyssavac Berna"
+        },
+        {
+          "language": "en-US",
+          "value": "Lyssavac Berna"
+        }
+      ]
+    },
+    {
+      "code": "95",
+      "display": "Vaccin méningococcique A+C Mérieux",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Vaccin méningococcique A+C Mérieux"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Vaccin méningococcique A+C Mérieux"
+        },
+        {
+          "language": "it-CH",
+          "value": "Vaccin méningococcique A+C Mérieux"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Vaccin méningococcique A+C Mérieux"
+        },
+        {
+          "language": "en-US",
+          "value": "Vaccin méningococcique A+C Mérieux"
+        }
+      ]
+    },
+    {
+      "code": "96",
+      "display": "MM Vax",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "MM Vax"
+        },
+        {
+          "language": "fr-CH",
+          "value": "MM Vax"
+        },
+        {
+          "language": "it-CH",
+          "value": "MM Vax"
+        },
+        {
+          "language": "rm-CH",
+          "value": "MM Vax"
+        },
+        {
+          "language": "en-US",
+          "value": "MM Vax"
+        }
+      ]
+    },
+    {
+      "code": "97",
+      "display": "Mumaten",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Mumaten"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Mumaten"
+        },
+        {
+          "language": "it-CH",
+          "value": "Mumaten"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Mumaten"
+        },
+        {
+          "language": "en-US",
+          "value": "Mumaten"
+        }
+      ]
+    },
+    {
+      "code": "98",
+      "display": "Pedvax",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Pedvax"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Pedvax"
+        },
+        {
+          "language": "it-CH",
+          "value": "Pedvax"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Pedvax"
+        },
+        {
+          "language": "en-US",
+          "value": "Pedvax"
+        }
+      ]
+    },
+    {
+      "code": "99",
+      "display": "Pentacoq",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Pentacoq"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Pentacoq"
+        },
+        {
+          "language": "it-CH",
+          "value": "Pentacoq"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Pentacoq"
+        },
+        {
+          "language": "en-US",
+          "value": "Pentacoq"
+        }
+      ]
+    },
+    {
+      "code": "100",
+      "display": "Pnu-Immune",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Pnu-Immune"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Pnu-Immune"
+        },
+        {
+          "language": "it-CH",
+          "value": "Pnu-Immune"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Pnu-Immune"
+        },
+        {
+          "language": "en-US",
+          "value": "Pnu-Immune"
+        }
+      ]
+    },
+    {
+      "code": "101",
+      "display": "Polio Salk",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Polio Salk"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Polio Salk"
+        },
+        {
+          "language": "it-CH",
+          "value": "Polio Salk"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Polio Salk"
+        },
+        {
+          "language": "en-US",
+          "value": "Polio Salk"
+        }
+      ]
+    },
+    {
+      "code": "102",
+      "display": "Polio Sabin",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Polio Sabin"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Polio Sabin"
+        },
+        {
+          "language": "it-CH",
+          "value": "Polio Sabin"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Polio Sabin"
+        },
+        {
+          "language": "en-US",
+          "value": "Polio Sabin"
+        }
+      ]
+    },
+    {
+      "code": "103",
+      "display": "Poloral",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Poloral"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Poloral"
+        },
+        {
+          "language": "it-CH",
+          "value": "Poloral"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Poloral"
+        },
+        {
+          "language": "en-US",
+          "value": "Poloral"
+        }
+      ]
+    },
+    {
+      "code": "106",
+      "display": "Tetracoq",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Tetracoq"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Tetracoq"
+        },
+        {
+          "language": "it-CH",
+          "value": "Tetracoq"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Tetracoq"
+        },
+        {
+          "language": "en-US",
+          "value": "Tetracoq"
+        }
+      ]
+    },
+    {
+      "code": "107",
+      "display": "Tetramune",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Tetramune"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Tetramune"
+        },
+        {
+          "language": "it-CH",
+          "value": "Tetramune"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Tetramune"
+        },
+        {
+          "language": "en-US",
+          "value": "Tetramune"
+        }
+      ]
+    },
+    {
+      "code": "110",
+      "display": "Vaqta",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Vaqta"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Vaqta"
+        },
+        {
+          "language": "it-CH",
+          "value": "Vaqta"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Vaqta"
+        },
+        {
+          "language": "en-US",
+          "value": "Vaqta"
+        }
+      ]
+    },
+    {
+      "code": "111",
+      "display": "Rubeaten",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Rubeaten"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Rubeaten"
+        },
+        {
+          "language": "it-CH",
+          "value": "Rubeaten"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Rubeaten"
+        },
+        {
+          "language": "en-US",
+          "value": "Rubeaten"
+        }
+      ]
+    },
+    {
+      "code": "112",
+      "display": "Rudivax",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Rudivax"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Rudivax"
+        },
+        {
+          "language": "it-CH",
+          "value": "Rudivax"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Rudivax"
+        },
+        {
+          "language": "en-US",
+          "value": "Rudivax"
+        }
+      ]
+    },
+    {
+      "code": "115",
+      "display": "Havrix 360",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Havrix 360"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Havrix 360"
+        },
+        {
+          "language": "it-CH",
+          "value": "Havrix 360"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Havrix 360"
+        },
+        {
+          "language": "en-US",
+          "value": "Havrix 360"
+        }
+      ]
+    },
+    {
+      "code": "117",
+      "display": "Almevax",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Almevax"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Almevax"
+        },
+        {
+          "language": "it-CH",
+          "value": "Almevax"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Almevax"
+        },
+        {
+          "language": "en-US",
+          "value": "Almevax"
+        }
+      ]
+    },
+    {
+      "code": "118",
+      "display": "Hevac B",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Hevac B"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Hevac B"
+        },
+        {
+          "language": "it-CH",
+          "value": "Hevac B"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Hevac B"
+        },
+        {
+          "language": "en-US",
+          "value": "Hevac B"
+        }
+      ]
+    },
+    {
+      "code": "119",
+      "display": "MMR-I",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "MMR-I"
+        },
+        {
+          "language": "fr-CH",
+          "value": "MMR-I"
+        },
+        {
+          "language": "it-CH",
+          "value": "MMR-I"
+        },
+        {
+          "language": "rm-CH",
+          "value": "MMR-I"
+        },
+        {
+          "language": "en-US",
+          "value": "MMR-I"
+        }
+      ]
+    },
+    {
+      "code": "120",
+      "display": "Moruman",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Moruman"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Moruman"
+        },
+        {
+          "language": "it-CH",
+          "value": "Moruman"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Moruman"
+        },
+        {
+          "language": "en-US",
+          "value": "Moruman"
+        }
+      ]
+    },
+    {
+      "code": "121",
+      "display": "Rimparix",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Rimparix"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Rimparix"
+        },
+        {
+          "language": "it-CH",
+          "value": "Rimparix"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Rimparix"
+        },
+        {
+          "language": "en-US",
+          "value": "Rimparix"
+        }
+      ]
+    },
+    {
+      "code": "122",
+      "display": "Rubevac",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Rubevac"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Rubevac"
+        },
+        {
+          "language": "it-CH",
+          "value": "Rubevac"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Rubevac"
+        },
+        {
+          "language": "en-US",
+          "value": "Rubevac"
+        }
+      ]
+    },
+    {
+      "code": "123",
+      "display": "Trimovax",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Trimovax"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Trimovax"
+        },
+        {
+          "language": "it-CH",
+          "value": "Trimovax"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Trimovax"
+        },
+        {
+          "language": "en-US",
+          "value": "Trimovax"
+        }
+      ]
+    },
+    {
+      "code": "126",
+      "display": "Ditanrix pediatric",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Ditanrix pediatric"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Ditanrix pediatric"
+        },
+        {
+          "language": "it-CH",
+          "value": "Ditanrix pediatric"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Ditanrix pediatric"
+        },
+        {
+          "language": "en-US",
+          "value": "Ditanrix pediatric"
+        }
+      ]
+    },
+    {
+      "code": "127",
+      "display": "Eolarix",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Eolarix"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Eolarix"
+        },
+        {
+          "language": "it-CH",
+          "value": "Eolarix"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Eolarix"
+        },
+        {
+          "language": "en-US",
+          "value": "Eolarix"
+        }
+      ]
+    },
+    {
+      "code": "128",
+      "display": "FSME-Immun Injekt",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "FSME-Immun Injekt"
+        },
+        {
+          "language": "fr-CH",
+          "value": "FSME-Immun Inject"
+        },
+        {
+          "language": "it-CH",
+          "value": "FSME-Immun Iniettare"
+        },
+        {
+          "language": "rm-CH",
+          "value": "FSME-Immun inject"
+        },
+        {
+          "language": "en-US",
+          "value": "FSME-Immun Inject"
+        }
+      ]
+    },
+    {
+      "code": "133",
+      "display": "ProHibit",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "ProHibit"
+        },
+        {
+          "language": "fr-CH",
+          "value": "ProHibit"
+        },
+        {
+          "language": "it-CH",
+          "value": "ProHibit"
+        },
+        {
+          "language": "rm-CH",
+          "value": "ProHibit"
+        },
+        {
+          "language": "en-US",
+          "value": "ProHibit"
+        }
+      ]
+    },
+    {
+      "code": "134",
+      "display": "Anatoxal DiTe Kinder",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Anatoxal DiTe Kinder"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Anatoxal DiTe enfants"
+        },
+        {
+          "language": "it-CH",
+          "value": "Anatoxal DiTe bambini"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Anatoxal DiTe uffants"
+        },
+        {
+          "language": "en-US",
+          "value": "Anatoxal DiTe children"
+        }
+      ]
+    },
+    {
+      "code": "136",
+      "display": "Celtura",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Celtura"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Celtura"
+        },
+        {
+          "language": "it-CH",
+          "value": "Celtura"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Celtura"
+        },
+        {
+          "language": "en-US",
+          "value": "Celtura"
+        }
+      ]
+    },
+    {
+      "code": "137",
+      "display": "Focetria",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Focetria"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Focetria"
+        },
+        {
+          "language": "it-CH",
+          "value": "Focetria"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Focetria"
+        },
+        {
+          "language": "en-US",
+          "value": "Focetria"
+        }
+      ]
+    },
+    {
+      "code": "138",
+      "display": "K1, K2, K3",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "K1, K2, K3"
+        },
+        {
+          "language": "fr-CH",
+          "value": "K1, K2, K3"
+        },
+        {
+          "language": "it-CH",
+          "value": "K1, K2, K3"
+        },
+        {
+          "language": "rm-CH",
+          "value": "K1, K2, K3"
+        },
+        {
+          "language": "en-US",
+          "value": "K1, K2, K3"
+        }
+      ]
+    },
+    {
+      "code": "139",
+      "display": "Koprowski",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Koprowski"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Koprowski"
+        },
+        {
+          "language": "it-CH",
+          "value": "Koprowski"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Koprowski"
+        },
+        {
+          "language": "en-US",
+          "value": "Koprowski"
+        }
+      ]
+    },
+    {
+      "code": "141",
+      "display": "Pandemrix",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Pandemrix"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Pandemrix"
+        },
+        {
+          "language": "it-CH",
+          "value": "Pandemrix"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Pandemrix"
+        },
+        {
+          "language": "en-US",
+          "value": "Pandemrix"
+        }
+      ]
+    },
+    {
+      "code": "142",
+      "display": "Prohibit DTP",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Prohibit DTP"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Prohibit DTP"
+        },
+        {
+          "language": "it-CH",
+          "value": "Prohibit DTP"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Prohibit DTP"
+        },
+        {
+          "language": "en-US",
+          "value": "Prohibit DTP"
+        }
+      ]
+    },
+    {
+      "code": "143",
+      "display": "TAB oral",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "TAB oral"
+        },
+        {
+          "language": "fr-CH",
+          "value": "TAB oral"
+        },
+        {
+          "language": "it-CH",
+          "value": "TAB oral"
+        },
+        {
+          "language": "rm-CH",
+          "value": "TAB oral"
+        },
+        {
+          "language": "en-US",
+          "value": "TAB oral"
+        }
+      ]
+    },
+    {
+      "code": "144",
+      "display": "Variola",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Variola"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Variola"
+        },
+        {
+          "language": "it-CH",
+          "value": "Variola"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Variola"
+        },
+        {
+          "language": "en-US",
+          "value": "Variola"
+        }
+      ]
+    },
+    {
+      "code": "147",
+      "display": "Polio Koprowski (K1-K3)",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Polio Koprowski (K1-K3)"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Polio Koprowski (K1-K3)"
+        },
+        {
+          "language": "it-CH",
+          "value": "Polio Koprowski (K1-K3)"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Polio Koprowski (K1-K3)"
+        },
+        {
+          "language": "en-US",
+          "value": "Polio Koprowski (K1-K3)"
+        }
+      ]
+    },
+    {
+      "code": "148",
+      "display": "Polio Lilly",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Polio Lilly"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Polio Lilly"
+        },
+        {
+          "language": "it-CH",
+          "value": "Polio Lilly"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Polio Lilly"
+        },
+        {
+          "language": "en-US",
+          "value": "Polio Lilly"
+        }
+      ]
+    },
+    {
+      "code": "151",
+      "display": "Di Anatoxal",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Di Anatoxal"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Di Anatoxal"
+        },
+        {
+          "language": "it-CH",
+          "value": "Di Anatoxal"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Di Anatoxal"
+        },
+        {
+          "language": "en-US",
+          "value": "Di Anatoxal"
+        }
+      ]
+    },
+    {
+      "code": "154",
+      "display": "DiTe Anatoxal Kinder / Enfants",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "DiTe Anatoxal Kinder"
+        },
+        {
+          "language": "fr-CH",
+          "value": "DiTe Anatoxal enfants"
+        },
+        {
+          "language": "it-CH",
+          "value": "DiTe Anatoxal bambini"
+        },
+        {
+          "language": "rm-CH",
+          "value": "DiTe Anatoxal uffants"
+        },
+        {
+          "language": "en-US",
+          "value": "DiTe Anatoxal children"
+        }
+      ]
+    },
+    {
+      "code": "155",
+      "display": "DiTePer Anatoxal",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "DiTePer Anatoxal"
+        },
+        {
+          "language": "fr-CH",
+          "value": "DiTePer Anatoxal"
+        },
+        {
+          "language": "it-CH",
+          "value": "DiTePer Anatoxal"
+        },
+        {
+          "language": "rm-CH",
+          "value": "DiTePer Anatoxal"
+        },
+        {
+          "language": "en-US",
+          "value": "DiTePer Anatoxal"
+        }
+      ]
+    },
+    {
+      "code": "162",
+      "display": "HBVAX DNA 5",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "HBVAX DNA 5"
+        },
+        {
+          "language": "fr-CH",
+          "value": "HBVAX DNA 5"
+        },
+        {
+          "language": "it-CH",
+          "value": "HBVAX DNA 5"
+        },
+        {
+          "language": "rm-CH",
+          "value": "HBVAX DNA 5"
+        },
+        {
+          "language": "en-US",
+          "value": "HBVAX DNA 5"
+        }
+      ]
+    },
+    {
+      "code": "163",
+      "display": "HBVAX DNA 10",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "HBVAX DNA 10"
+        },
+        {
+          "language": "fr-CH",
+          "value": "HBVAX DNA 10"
+        },
+        {
+          "language": "it-CH",
+          "value": "HBVAX DNA 10"
+        },
+        {
+          "language": "rm-CH",
+          "value": "HBVAX DNA 10"
+        },
+        {
+          "language": "en-US",
+          "value": "HBVAX DNA 10"
+        }
+      ]
+    },
+    {
+      "code": "164",
+      "display": "HBVAX DNA 40",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "HBVAX DNA 40"
+        },
+        {
+          "language": "fr-CH",
+          "value": "HBVAX DNA 40"
+        },
+        {
+          "language": "it-CH",
+          "value": "HBVAX DNA 40"
+        },
+        {
+          "language": "rm-CH",
+          "value": "HBVAX DNA 40"
+        },
+        {
+          "language": "en-US",
+          "value": "HBVAX DNA 40"
+        }
+      ]
+    },
+    {
+      "code": "165",
+      "display": "Havrix junior",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Havrix junior"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Havrix junior"
+        },
+        {
+          "language": "it-CH",
+          "value": "Havrix junior"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Havrix junior"
+        },
+        {
+          "language": "en-US",
+          "value": "Havrix junior"
+        }
+      ]
+    },
+    {
+      "code": "166",
+      "display": "Infanrix",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Infanrix"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Infanrix"
+        },
+        {
+          "language": "it-CH",
+          "value": "Infanrix"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Infanrix"
+        },
+        {
+          "language": "en-US",
+          "value": "Infanrix"
+        }
+      ]
+    },
+    {
+      "code": "168",
+      "display": "Tanrix",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Tanrix"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Tanrix"
+        },
+        {
+          "language": "it-CH",
+          "value": "Tanrix"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Tanrix"
+        },
+        {
+          "language": "en-US",
+          "value": "Tanrix"
+        }
+      ]
+    },
+    {
+      "code": "169",
+      "display": "Vaccin variole",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Vaccin variole"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Vaccin variole"
+        },
+        {
+          "language": "it-CH",
+          "value": "Vaccin variole"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Vaccin variole"
+        },
+        {
+          "language": "en-US",
+          "value": "Vaccin variole"
+        }
+      ]
+    },
+    {
+      "code": "170",
+      "display": "Engerix-B 40",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Engerix-B 40"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Engerix-B 40"
+        },
+        {
+          "language": "it-CH",
+          "value": "Engerix-B 40"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Engerix-B 40"
+        },
+        {
+          "language": "en-US",
+          "value": "Engerix-B 40"
+        }
+      ]
+    },
+    {
+      "code": "172",
+      "display": "Hepavax",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Hepavax"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Hepavax"
+        },
+        {
+          "language": "it-CH",
+          "value": "Hepavax"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Hepavax"
+        },
+        {
+          "language": "en-US",
+          "value": "Hepavax"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "Orochol E",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Orochol E"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Orochol E"
+        },
+        {
+          "language": "it-CH",
+          "value": "Orochol E"
+        },
+        {
+          "language": "rm-CH",
+          "value": "Orochol E"
+        },
+        {
+          "language": "en-US",
+          "value": "Orochol E"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "source": "http://myvaccines.ch"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2021-01-24T00:00:00+01:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://fhir.ch/ig/ch-vacd/cs/vaccines-old",
+      "value": "old-vaccines"
+    }
+  ],
+  "version": "2021-01-24T00:00:00",
+  "experimental": false,
+  "publisher": "eHealth Suisse",
+  "contact": [
+    {
+      "name": "eHealth Suisse",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "www.e-health-suisse.ch"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "count": 80
+}

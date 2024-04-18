@@ -1,0 +1,16 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "forum-datenaustausch-tariff",
+  "name": "ForumDatenaustauschTariffType",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2023-04-20T00:00:00+02:00",
+  "description": "Identification for Forum Datenaustausch tariff types. \n\nThe detailed tariff list is avaible at this [url](https://www.forum-datenaustausch.ch/de/referenzdaten/)\n\nNaming Convention for fore each tariff type is:\n\nhttp://forum-datenaustausch.ch/tariff/[A-Z0-9]{3}\n",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "http://forum-datenaustausch.ch/tariff",
+      "preferred": true
+    }
+  ]
+}

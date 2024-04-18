@@ -1,0 +1,138 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SwissImmunizationRecommendationCategories",
+  "id": "ch-vacd-recommendation-categories-vs",
+  "title": "CH VACD Recommendation Categories for Immunizations",
+  "description": "Immunization recommendation categories.",
+  "url": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-categories-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "42284007",
+            "display": "Administration of vaccine product containing only live attenuated Mycobacterium bovis antigen (procedure)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "BCG-Impfung"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs",
+        "concept": [
+          {
+            "code": "41501",
+            "display": "REC_BASE",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Empfohlene Basisimpfungen"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Vaccinations recommandées de base"
+              },
+              {
+                "language": "it-CH",
+                "value": "Vaccinazioni raccomandate di base"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccinaziuns da basa recumandadas"
+              },
+              {
+                "language": "en-US",
+                "value": "Recommended primary vaccinations"
+              }
+            ]
+          },
+          {
+            "code": "41502",
+            "display": "REC_COMPL",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Empfohlene ergänzende Impfungen"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Vaccinations recommandées complémentaires"
+              },
+              {
+                "language": "it-CH",
+                "value": "Vaccinazioni raccomandate complementari"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccinaziuns cumplementaras recumandadas"
+              },
+              {
+                "language": "en-US",
+                "value": "Recommended booster vaccinations"
+              }
+            ]
+          },
+          {
+            "code": "41503",
+            "display": "REC_RISK",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Empfohlene Impfungen für Risikogruppen"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Vaccinations recommandées à des groupes à risque"
+              },
+              {
+                "language": "it-CH",
+                "value": "Vaccinazioni raccomandate a gruppi a rischio"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccinaziuns recumandadas per gruppas da ristga"
+              },
+              {
+                "language": "en-US",
+                "value": "Recommended vaccinations for risk groups"
+              }
+            ]
+          },
+          {
+            "code": "41504",
+            "display": "REC_NONE",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Impfungen ohne Empfehlungen"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Vaccinations sans recommandation d’utilisatio"
+              },
+              {
+                "language": "it-CH",
+                "value": "Vaccinazioni senza raccomandazione d’utilizzo"
+              },
+              {
+                "language": "rm-CH",
+                "value": "vaccinaziuns senza recumandaziuns"
+              },
+              {
+                "language": "en-US",
+                "value": "Vaccinations without recommendations"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

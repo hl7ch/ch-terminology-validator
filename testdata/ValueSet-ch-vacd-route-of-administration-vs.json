@@ -1,0 +1,149 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RouteOfAdministrationImmunization",
+  "id": "ch-vacd-route-of-administration-vs",
+  "title": "CH VACD Route of Administration for Immunization",
+  "description": "The route of immunization administration codes. This list is only a sublist of the List used for eMedication.",
+  "url": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-route-of-administration-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://standardterms.edqm.eu",
+        "concept": [
+          {
+            "code": "20030000",
+            "display": "Intradermal use",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "intradermale Anwendung"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Voie intradermique"
+              },
+              {
+                "language": "it-CH",
+                "value": "Uso intradermico"
+              },
+              {
+                "language": "rm-CH",
+                "value": "applicaziun intradermala"
+              },
+              {
+                "language": "en-US",
+                "value": "Intradermal use"
+              }
+            ]
+          },
+          {
+            "code": "20035000",
+            "display": "Intramuscular use",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "intramuskuläre Anwendung"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Voie intramusculaire"
+              },
+              {
+                "language": "it-CH",
+                "value": "Uso intramuscolare"
+              },
+              {
+                "language": "rm-CH",
+                "value": "applicaziun intramusculara"
+              },
+              {
+                "language": "en-US",
+                "value": "Intramuscular use"
+              }
+            ]
+          },
+          {
+            "code": "20049000",
+            "display": "Nasal use",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "nasale Anwendung"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Voie nasale"
+              },
+              {
+                "language": "it-CH",
+                "value": "Uso nasale"
+              },
+              {
+                "language": "rm-CH",
+                "value": "applicaziun nasala"
+              },
+              {
+                "language": "en-US",
+                "value": "Nasal use"
+              }
+            ]
+          },
+          {
+            "code": "20053000",
+            "display": "Oral use",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "zum Einnehmen"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Voie orale"
+              },
+              {
+                "language": "it-CH",
+                "value": "Uso orale"
+              },
+              {
+                "language": "rm-CH",
+                "value": "applicaziun orala"
+              },
+              {
+                "language": "en-US",
+                "value": "Oral use"
+              }
+            ]
+          },
+          {
+            "code": "20066000",
+            "display": "Subcutaneous use",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "subkutane Anwendung"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Voie sous-cutanée"
+              },
+              {
+                "language": "it-CH",
+                "value": "Uso sottocutaneo"
+              },
+              {
+                "language": "rm-CH",
+                "value": "applicaziun subcutana"
+              },
+              {
+                "language": "en-US",
+                "value": "Subcutaneous use"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

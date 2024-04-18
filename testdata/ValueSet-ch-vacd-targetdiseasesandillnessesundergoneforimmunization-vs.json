@@ -1,0 +1,821 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ChVacdTargetDiseasesAndIllnessesUndergoneForImmunization",
+  "id": "ch-vacd-targetdiseasesandillnessesundergoneforimmunization-vs",
+  "title": "CH VACD Target disease and illnesses undergone for immunization",
+  "description": "This valueset contains all entries defining target deseases or illnesses undergone for immunization reasons.",
+  "url": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-targetdiseasesandillnessesundergoneforimmunization-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "422400008",
+            "display": "Vomiting (disorder)",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Vomiting"
+              },
+              {
+                "language": "fr-CH",
+                "value": "vomissement"
+              },
+              {
+                "language": "de-CH",
+                "value": "Erbrechen"
+              },
+              {
+                "language": "it-CH",
+                "value": "vomito"
+              }
+            ]
+          },
+          {
+            "code": "38907003",
+            "display": "Varicella (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Windpocken"
+              },
+              {
+                "language": "fr-CH",
+                "value": "varicelle"
+              },
+              {
+                "language": "it-CH",
+                "value": "varicella"
+              },
+              {
+                "language": "rm-CH",
+                "value": "virola slevadia"
+              },
+              {
+                "language": "en-US",
+                "value": "Varicella"
+              }
+            ]
+          },
+          {
+            "code": "14189004",
+            "display": "Measles (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Masern"
+              },
+              {
+                "language": "fr-CH",
+                "value": "rougeole"
+              },
+              {
+                "language": "it-CH",
+                "value": "morbillo"
+              },
+              {
+                "language": "rm-CH",
+                "value": "virustgel"
+              },
+              {
+                "language": "en-US",
+                "value": "Measles"
+              }
+            ]
+          },
+          {
+            "code": "36989005",
+            "display": "Mumps (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Mumps"
+              },
+              {
+                "language": "fr-CH",
+                "value": "oreillons"
+              },
+              {
+                "language": "it-CH",
+                "value": "parotite"
+              },
+              {
+                "language": "rm-CH",
+                "value": "glandun"
+              },
+              {
+                "language": "en-US",
+                "value": "Mumps"
+              }
+            ]
+          },
+          {
+            "code": "36653000",
+            "display": "Rubella (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Röteln"
+              },
+              {
+                "language": "fr-CH",
+                "value": "rubéole"
+              },
+              {
+                "language": "it-CH",
+                "value": "rosolia"
+              },
+              {
+                "language": "rm-CH",
+                "value": "rubella"
+              },
+              {
+                "language": "en-US",
+                "value": "Rubella"
+              }
+            ]
+          },
+          {
+            "code": "40468003",
+            "display": "Viral hepatitis, type A (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Virale Hepatitis, Typ A"
+              },
+              {
+                "language": "fr-CH",
+                "value": "hépatite virale de type A"
+              },
+              {
+                "language": "it-CH",
+                "value": "epatite virale tipo A"
+              },
+              {
+                "language": "rm-CH",
+                "value": "hepatitis virala tip A"
+              },
+              {
+                "language": "en-US",
+                "value": "Viral hepatitis, type A"
+              }
+            ]
+          },
+          {
+            "code": "66071002",
+            "display": "Viral hepatitis type B (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Virale Hepatitis, Typ B"
+              },
+              {
+                "language": "fr-CH",
+                "value": "hépatite virale de type B"
+              },
+              {
+                "language": "it-CH",
+                "value": "epatite virale tipo B"
+              },
+              {
+                "language": "rm-CH",
+                "value": "hepatitis virala tip B"
+              },
+              {
+                "language": "en-US",
+                "value": "Viral hepatitis type B"
+              }
+            ]
+          },
+          {
+            "code": "712986001",
+            "display": "Encephalitis caused by tick-borne encephalitis virus (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Frühsommer-Meningoenzephalitis"
+              },
+              {
+                "language": "fr-CH",
+                "value": "encéphalite à tiques"
+              },
+              {
+                "language": "it-CH",
+                "value": "meningoencefalite verno-estiva"
+              },
+              {
+                "language": "rm-CH",
+                "value": "meningoencefalitis da zeccas (FSME)"
+              },
+              {
+                "language": "en-US",
+                "value": "Tickborne encephalitis"
+              }
+            ]
+          },
+          {
+            "code": "16541001",
+            "display": "Yellow fever (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Gelbfieber"
+              },
+              {
+                "language": "fr-CH",
+                "value": "fièvre jaune"
+              },
+              {
+                "language": "it-CH",
+                "value": "febbre gialla"
+              },
+              {
+                "language": "rm-CH",
+                "value": "fevra melna"
+              },
+              {
+                "language": "en-US",
+                "value": "Yellow fever"
+              }
+            ]
+          },
+          {
+            "code": "76902006",
+            "display": "Tetanus (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Starrkrampf"
+              },
+              {
+                "language": "fr-CH",
+                "value": "tétanos"
+              },
+              {
+                "language": "it-CH",
+                "value": "tetano"
+              },
+              {
+                "language": "rm-CH",
+                "value": "tetanus"
+              },
+              {
+                "language": "en-US",
+                "value": "Tetanus"
+              }
+            ]
+          },
+          {
+            "code": "63650001",
+            "display": "Cholera (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Cholera"
+              },
+              {
+                "language": "fr-CH",
+                "value": "choléra"
+              },
+              {
+                "language": "it-CH",
+                "value": "colera"
+              },
+              {
+                "language": "rm-CH",
+                "value": "colera"
+              },
+              {
+                "language": "en-US",
+                "value": "Cholera"
+              }
+            ]
+          },
+          {
+            "code": "27836007",
+            "display": "Pertussis (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Keuchhusten"
+              },
+              {
+                "language": "fr-CH",
+                "value": "coqueluche"
+              },
+              {
+                "language": "it-CH",
+                "value": "pertosse"
+              },
+              {
+                "language": "rm-CH",
+                "value": "tuss chanina"
+              },
+              {
+                "language": "en-US",
+                "value": "Pertussis"
+              }
+            ]
+          },
+          {
+            "code": "398102009",
+            "display": "Acute poliomyelitis (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Akute Poliomyelitis"
+              },
+              {
+                "language": "fr-CH",
+                "value": "poliomyélite aiguë"
+              },
+              {
+                "language": "it-CH",
+                "value": "poliomielite acuta"
+              },
+              {
+                "language": "rm-CH",
+                "value": "poliomielitis acuta"
+              },
+              {
+                "language": "en-US",
+                "value": "Acute poliomyelitis"
+              }
+            ]
+          },
+          {
+            "code": "18624000",
+            "display": "Disease caused by Rotavirus (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Rotaviren-Erkrankung"
+              },
+              {
+                "language": "fr-CH",
+                "value": "infection à rotavirus"
+              },
+              {
+                "language": "it-CH",
+                "value": "malattia da rotavirus"
+              },
+              {
+                "language": "rm-CH",
+                "value": "malsogna da rotavirus"
+              },
+              {
+                "language": "en-US",
+                "value": "Rotavirus disease"
+              }
+            ]
+          },
+          {
+            "code": "14168008",
+            "display": "Rabies (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Tollwut"
+              },
+              {
+                "language": "fr-CH",
+                "value": "rage"
+              },
+              {
+                "language": "it-CH",
+                "value": "rabbia"
+              },
+              {
+                "language": "rm-CH",
+                "value": "frenesia"
+              },
+              {
+                "language": "en-US",
+                "value": "Rabies"
+              }
+            ]
+          },
+          {
+            "code": "56717001",
+            "display": "Tuberculosis (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Tuberkulose"
+              },
+              {
+                "language": "fr-CH",
+                "value": "tuberculose"
+              },
+              {
+                "language": "it-CH",
+                "value": "tubercolosi"
+              },
+              {
+                "language": "rm-CH",
+                "value": "tuberculosa"
+              },
+              {
+                "language": "en-US",
+                "value": "Tuberculosis"
+              }
+            ]
+          },
+          {
+            "code": "4834000",
+            "display": "Typhoid fever (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Typhus"
+              },
+              {
+                "language": "fr-CH",
+                "value": "fièvre typhoïde"
+              },
+              {
+                "language": "it-CH",
+                "value": "febbre tifoidea"
+              },
+              {
+                "language": "rm-CH",
+                "value": "tifus"
+              },
+              {
+                "language": "en-US",
+                "value": "Typhoid fever"
+              }
+            ]
+          },
+          {
+            "code": "709410003",
+            "display": "Haemophilus influenzae type b infection (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Infektion mit Haemophilus influenzae Typ B"
+              },
+              {
+                "language": "fr-CH",
+                "value": "infection à Haemophilus influenzae de type b"
+              },
+              {
+                "language": "it-CH",
+                "value": "infezione da Haemophilus influenzae di tipo b"
+              },
+              {
+                "language": "rm-CH",
+                "value": "infecziun cun hemofilus influenza tip B"
+              },
+              {
+                "language": "en-US",
+                "value": "Haemophilus influenzae type b infection"
+              }
+            ]
+          },
+          {
+            "code": "397430003",
+            "display": "Diphtheria caused by Corynebacterium diphtheriae (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Diphtherie"
+              },
+              {
+                "language": "fr-CH",
+                "value": "diphtérie"
+              },
+              {
+                "language": "it-CH",
+                "value": "difterite"
+              },
+              {
+                "language": "rm-CH",
+                "value": "difteria"
+              },
+              {
+                "language": "en-US",
+                "value": "Diphtheria"
+              }
+            ]
+          },
+          {
+            "code": "840539006",
+            "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "COVID-19"
+              },
+              {
+                "language": "fr-CH",
+                "value": "COVID-19"
+              },
+              {
+                "language": "it-CH",
+                "value": "COVID-19"
+              },
+              {
+                "language": "rm-CH",
+                "value": "COVID-19"
+              },
+              {
+                "language": "en-US",
+                "value": "COVID-19"
+              }
+            ]
+          },
+          {
+            "code": "52947006",
+            "display": "Japanese encephalitis virus disease (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Japanische Enzephalitis"
+              },
+              {
+                "language": "fr-CH",
+                "value": "encéphalite japonaise"
+              },
+              {
+                "language": "it-CH",
+                "value": "encefalite giapponese"
+              },
+              {
+                "language": "rm-CH",
+                "value": "encefalitis giapunaisa"
+              },
+              {
+                "language": "en-US",
+                "value": "Japanese encephalitis"
+              }
+            ]
+          },
+          {
+            "code": "719865001",
+            "display": "Influenza caused by pandemic influenza virus (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Pandemische Influenza"
+              },
+              {
+                "language": "fr-CH",
+                "value": "grippe pandémique"
+              },
+              {
+                "language": "it-CH",
+                "value": "influenza pandemica"
+              },
+              {
+                "language": "rm-CH",
+                "value": "grippa pandemica"
+              },
+              {
+                "language": "en-US",
+                "value": "Influenza caused by pandemic influenza virus"
+              }
+            ]
+          },
+          {
+            "code": "719590007",
+            "display": "Influenza caused by seasonal influenza virus (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Saisonale Influenza"
+              },
+              {
+                "language": "fr-CH",
+                "value": "grippe saisonnière"
+              },
+              {
+                "language": "it-CH",
+                "value": "influenza stagionale"
+              },
+              {
+                "language": "rm-CH",
+                "value": "grippa stagiunala"
+              },
+              {
+                "language": "en-US",
+                "value": "Influenza caused by seasonal influenza virus"
+              }
+            ]
+          },
+          {
+            "code": "67924001",
+            "display": "Smallpox (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Pocken"
+              },
+              {
+                "language": "fr-CH",
+                "value": "variole"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaiolo"
+              },
+              {
+                "language": "rm-CH",
+                "value": "virola"
+              },
+              {
+                "language": "en-US",
+                "value": "Smallpox"
+              }
+            ]
+          },
+          {
+            "code": "359814004",
+            "display": "Monkeypox (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Affenpocken"
+              },
+              {
+                "language": "fr-CH",
+                "value": "variole du singe"
+              },
+              {
+                "language": "it-CH",
+                "value": "vaiolo delle scimmie"
+              },
+              {
+                "language": "rm-CH",
+                "value": "virola da schimgias"
+              },
+              {
+                "language": "en-US",
+                "value": "Monkeypox"
+              }
+            ]
+          },
+          {
+            "code": "240532009",
+            "display": "Human papillomavirus infection (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "HPV-Erkrankung (Humanes Papillomavirus)"
+              },
+              {
+                "language": "fr-CH",
+                "value": "infection par les HPV (papillomavirus humains)"
+              },
+              {
+                "language": "it-CH",
+                "value": "patologia causata da HPV (virus del papilloma umano)"
+              },
+              {
+                "language": "rm-CH",
+                "value": "malsogna da HPV (papillomavirus uman)"
+              },
+              {
+                "language": "en-US",
+                "value": "HPV (Human papillomavirus) disease"
+              }
+            ]
+          },
+          {
+            "code": "4740000",
+            "display": "Herpes zoster (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Herpes zoster"
+              },
+              {
+                "language": "fr-CH",
+                "value": "zona"
+              },
+              {
+                "language": "it-CH",
+                "value": "herpes zoster"
+              },
+              {
+                "language": "rm-CH",
+                "value": "herpes zoster"
+              },
+              {
+                "language": "en-US",
+                "value": "Herpes zoster"
+              }
+            ]
+          },
+          {
+            "code": "23511006",
+            "display": "Meningococcal infectious disease (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Meningokokken-Erkrankung"
+              },
+              {
+                "language": "fr-CH",
+                "value": "infection à méningocoques"
+              },
+              {
+                "language": "it-CH",
+                "value": "malattia da meningococchi"
+              },
+              {
+                "language": "rm-CH",
+                "value": "malsogna da meningococcus"
+              },
+              {
+                "language": "en-US",
+                "value": "Meningococcal disease"
+              }
+            ]
+          },
+          {
+            "code": "16814004",
+            "display": "Pneumococcal infectious disease (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Pneumokokken-Erkrankung"
+              },
+              {
+                "language": "fr-CH",
+                "value": "infection à pneumocoques"
+              },
+              {
+                "language": "it-CH",
+                "value": "malattia da pneumococchi"
+              },
+              {
+                "language": "rm-CH",
+                "value": "malsogna da pneumococcus"
+              },
+              {
+                "language": "en-US",
+                "value": "Pneumococcal disease"
+              }
+            ]
+          },
+          {
+            "code": "37109004",
+            "display": "Ebola virus disease (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "EVD - Ebola virus disease"
+              },
+              {
+                "language": "fr-CH",
+                "value": "EVD - Ebola virus disease"
+              },
+              {
+                "language": "it-CH",
+                "value": "EVD - Ebola virus disease"
+              },
+              {
+                "language": "rm-CH",
+                "value": "EVD – ebola virus disease"
+              },
+              {
+                "language": "en-US",
+                "value": "EVD - Ebola virus disease"
+              }
+            ]
+          },
+          {
+            "code": "860805006",
+            "display": "Encephalomyelitis caused by Neisseria meningitidis (disorder)",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "Encephalomyelitis caused by Neisseria meningitidis (disorder)"
+              },
+              {
+                "language": "fr-CH",
+                "value": "Encephalomyelitis caused by Neisseria meningitidis (disorder)"
+              },
+              {
+                "language": "it-CH",
+                "value": "Encephalomyelitis caused by Neisseria meningitidis (disorder)"
+              },
+              {
+                "language": "rm-CH",
+                "value": "Encephalomyelitis caused by Neisseria meningitidis (disorder)"
+              },
+              {
+                "language": "en-US",
+                "value": "Encephalomyelitis caused by Neisseria meningitidis (disorder)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

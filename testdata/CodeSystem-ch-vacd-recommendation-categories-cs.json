@@ -1,0 +1,134 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SwissImmunizationRecommendationCategoriesCodesystem",
+  "id": "ch-vacd-recommendation-categories-cs",
+  "title": "CH VACD Swiss Immunization Recommendation Categories",
+  "description": "Immunization recommendation categories available in Switzerland.",
+  "url": "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs",
+  "concept": [
+    {
+      "code": "41501",
+      "display": "Empfohlene Basisimpfungen",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Empfohlene Basisimpfungen"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Empfohlene Basisimpfungen"
+        },
+        {
+          "language": "it-CH",
+          "value": "Empfohlene Basisimpfungen"
+        },
+        {
+          "language": "en-US",
+          "value": "Empfohlene Basisimpfungen"
+        }
+      ]
+    },
+    {
+      "code": "41502",
+      "display": "Empfohlene ergänzende Impfungen",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Empfohlene ergänzende Impfungen"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Empfohlene ergänzende Impfungen"
+        },
+        {
+          "language": "it-CH",
+          "value": "Empfohlene ergänzende Impfungen"
+        },
+        {
+          "language": "en-US",
+          "value": "Empfohlene ergänzende Impfungen"
+        }
+      ]
+    },
+    {
+      "code": "41503",
+      "display": "Empfohlene Impfungen für Risikogruppen",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Empfohlene Impfungen für Risikogruppen"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Empfohlene Impfungen für Risikogruppen"
+        },
+        {
+          "language": "it-CH",
+          "value": "Empfohlene Impfungen für Risikogruppen"
+        },
+        {
+          "language": "en-US",
+          "value": "Empfohlene Impfungen für Risikogruppen"
+        }
+      ]
+    },
+    {
+      "code": "41504",
+      "display": "Impfungen ohne Empfehlungen",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Impfungen ohne Empfehlungen"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Impfungen ohne Empfehlungen"
+        },
+        {
+          "language": "it-CH",
+          "value": "Impfungen ohne Empfehlungen"
+        },
+        {
+          "language": "en-US",
+          "value": "Impfungen ohne Empfehlungen"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "source": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-categories-vs"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2021-01-24T00:00:00+01:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "urn:oid:2.16.756.5.30.1.127.3.3.4"
+    }
+  ],
+  "version": "2021-01-24T00:00:00",
+  "experimental": false,
+  "publisher": "eHealth Suisse",
+  "contact": [
+    {
+      "name": "eHealth Suisse",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "www.e-health-suisse.ch"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "count": 4
+}

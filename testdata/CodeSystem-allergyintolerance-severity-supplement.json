@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "supplement",
+  "name": "AllergyIntoleranceSeverityStatus",
+  "id": "allergyintolerance-severity-supplement",
+  "title": "CH AllergyIntolerance Severity Status",
+  "description": "Code supplement with translations of CHAllergyIntolerance severity status",
+  "url": "http://fhir.ch/ig/ch-allergyintolerance/CodeSystem/allergyintolerance-severity-supplement",
+  "concept": [
+    {
+      "code": "mild",
+      "display": "Mild",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Mild"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Faible"
+        },
+        {
+          "language": "it-CH",
+          "value": "Lieve"
+        }
+      ]
+    },
+    {
+      "code": "moderate",
+      "display": "Moderate",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Moderat"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Moyen"
+        },
+        {
+          "language": "it-CH",
+          "value": "Moderata"
+        }
+      ]
+    },
+    {
+      "code": "severe",
+      "display": "Severe",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "Schwer"
+        },
+        {
+          "language": "fr-CH",
+          "value": "Grave"
+        },
+        {
+          "language": "it-CH",
+          "value": "Grave"
+        }
+      ]
+    }
+  ],
+  "experimental": true,
+  "supplements": "http://hl7.org/fhir/reaction-event-severity"
+}

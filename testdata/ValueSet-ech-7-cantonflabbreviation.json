@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ECH007CantonFLAbbreviation",
+  "id": "ech-7-cantonflabbreviation",
+  "title": "eCH-0007 Canton Abbreviation incl. FL (Fürstentum Liechtenstein)",
+  "description": "eCH-0007: Analogous to cantonAbbreviation, but contains the entry 'FL' for the Principality of Liechtenstein in addition to the actual cantons. ",
+  "url": "http://fhir.ch/ig/ch-core/ValueSet/ech-7-cantonflabbreviation",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.ch/ig/ch-core/CodeSystem/ech-7-cantonflabbreviation"
+      }
+    ]
+  }
+}

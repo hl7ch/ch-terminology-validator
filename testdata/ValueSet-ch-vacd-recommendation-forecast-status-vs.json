@@ -1,0 +1,227 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SwissRecommendationForecastStatus",
+  "id": "ch-vacd-recommendation-forecast-status-vs",
+  "title": "CH VACD Swiss Recommendation Forecast Status",
+  "description": "Immunization recommendation forecast status values.",
+  "url": "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-forecast-status-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-forecast-status-cs",
+        "concept": [
+          {
+            "code": "due",
+            "display": "Due",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "The patient is due for their next vaccination."
+              },
+              {
+                "language": "fr-CH",
+                "value": "The patient is due for their next vaccination."
+              },
+              {
+                "language": "it-CH",
+                "value": "The patient is due for their next vaccination."
+              },
+              {
+                "language": "rm-CH",
+                "value": "The patient is due for their next vaccination."
+              },
+              {
+                "language": "en-US",
+                "value": "The patient is due for their next vaccination."
+              }
+            ]
+          },
+          {
+            "code": "overdue",
+            "display": "Overdue",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "The patient is considered overdue for their next vaccination."
+              },
+              {
+                "language": "fr-CH",
+                "value": "The patient is considered overdue for their next vaccination."
+              },
+              {
+                "language": "it-CH",
+                "value": "The patient is considered overdue for their next vaccination."
+              },
+              {
+                "language": "rm-CH",
+                "value": "The patient is considered overdue for their next vaccination."
+              },
+              {
+                "language": "en-US",
+                "value": "The patient is considered overdue for their next vaccination."
+              }
+            ]
+          },
+          {
+            "code": "immune",
+            "display": "Immune",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "The patient is immune to the target disease and further immunization against the disease is not likely to provide benefit."
+              },
+              {
+                "language": "fr-CH",
+                "value": "The patient is immune to the target disease and further immunization against the disease is not likely to provide benefit."
+              },
+              {
+                "language": "it-CH",
+                "value": "The patient is immune to the target disease and further immunization against the disease is not likely to provide benefit."
+              },
+              {
+                "language": "rm-CH",
+                "value": "The patient is immune to the target disease and further immunization against the disease is not likely to provide benefit."
+              },
+              {
+                "language": "en-US",
+                "value": "The patient is immune to the target disease and further immunization against the disease is not likely to provide benefit."
+              }
+            ]
+          },
+          {
+            "code": "consultadvise",
+            "display": "Consult Advice",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "The patient may be contraindicated but get health care advice."
+              },
+              {
+                "language": "fr-CH",
+                "value": "The patient may be contraindicated but get health care advice."
+              },
+              {
+                "language": "it-CH",
+                "value": "The patient may be contraindicated but get health care advice."
+              },
+              {
+                "language": "rm-CH",
+                "value": "The patient may be contraindicated but get health care advice."
+              },
+              {
+                "language": "en-US",
+                "value": "The patient may be contraindicated but get health care advice."
+              }
+            ]
+          },
+          {
+            "code": "indicated",
+            "display": "Indicated",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "The patient is indicated for further doses."
+              },
+              {
+                "language": "fr-CH",
+                "value": "The patient is indicated for further doses."
+              },
+              {
+                "language": "it-CH",
+                "value": "The patient is indicated for further doses."
+              },
+              {
+                "language": "rm-CH",
+                "value": "The patient is indicated for further doses."
+              },
+              {
+                "language": "en-US",
+                "value": "The patient is indicated for further doses."
+              }
+            ]
+          },
+          {
+            "code": "contraindicated",
+            "display": "Contraindicated",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "The patient is contraindicated for further doses."
+              },
+              {
+                "language": "fr-CH",
+                "value": "The patient is contraindicated for further doses."
+              },
+              {
+                "language": "it-CH",
+                "value": "The patient is contraindicated for further doses."
+              },
+              {
+                "language": "rm-CH",
+                "value": "The patient is contraindicated for further doses."
+              },
+              {
+                "language": "en-US",
+                "value": "The patient is contraindicated for further doses."
+              }
+            ]
+          },
+          {
+            "code": "complete",
+            "display": "Complete",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "The patient is fully protected and no further doses are recommended."
+              },
+              {
+                "language": "fr-CH",
+                "value": "The patient is fully protected and no further doses are recommended."
+              },
+              {
+                "language": "it-CH",
+                "value": "The patient is fully protected and no further doses are recommended."
+              },
+              {
+                "language": "rm-CH",
+                "value": "The patient is fully protected and no further doses are recommended."
+              },
+              {
+                "language": "en-US",
+                "value": "The patient is fully protected and no further doses are recommended."
+              }
+            ]
+          },
+          {
+            "code": "notrelevant",
+            "display": "NotRelevant",
+            "designation": [
+              {
+                "language": "de-CH",
+                "value": "There is no relevance for this patient."
+              },
+              {
+                "language": "fr-CH",
+                "value": "There is no relevance for this patient."
+              },
+              {
+                "language": "it-CH",
+                "value": "There is no relevance for this patient."
+              },
+              {
+                "language": "rm-CH",
+                "value": "There is no relevance for this patient."
+              },
+              {
+                "language": "en-US",
+                "value": "There is no relevance for this patient."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
