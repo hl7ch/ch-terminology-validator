@@ -10,6 +10,12 @@ import ch.ehealthsuisse.terminology.domain.VaccineTerminology;
  */
 public interface TerminologyLoader {
 
-	VaccineTerminology loadVaccineTerminologyResources(String string);
+	/**
+	 * Method to load all resources for validaton.
+	 * 
+	 * @param directory the directory to look up the resources
+	 * @return the instance of VaccineTerminology
+	 */
+	VaccineTerminology loadVaccineTerminologyResources(String directory);
 
 }

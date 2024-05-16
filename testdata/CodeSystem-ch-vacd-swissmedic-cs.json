@@ -63,6 +63,33 @@
       ]
     },
     {
+      "code": "11683",
+      "display": "FSME-Immun 0.25 ml Junior",
+      "definition": "FSME-Immun 0.25 ml Junior, Suspension zur intramuskulären Injektion\tPfizer AG",
+      "designation": [
+        {
+          "language": "de-CH",
+          "value": "FSME-Immun 0.25 ml Junior"
+        },
+        {
+          "language": "fr-CH",
+          "value": "FSME-Immun 0.25 ml Junior"
+        },
+        {
+          "language": "it-CH",
+          "value": "FSME-Immun 0.25 ml Junior"
+        },
+        {
+          "language": "rm-CH",
+          "value": "FSME-Immun 0.25 ml Junior"
+        },
+        {
+          "language": "en-US",
+          "value": "FSME-Immun 0.25 ml Junior"
+        }
+      ]
+    },
+    {
       "code": "450",
       "display": "FSME-Immun CC",
       "definition": "FSME-Immun CC, Suspension zur intramuskulären Injektion\tPfizer AG",

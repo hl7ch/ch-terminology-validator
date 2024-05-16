@@ -12,21 +12,18 @@ import ca.uhn.fhir.validation.ResultSeverityEnum;
 import ch.ehealthsuisse.terminology.domain.TerminologyValidationReport;
 import ch.ehealthsuisse.terminology.domain.VaccineTerminology;
 import ch.ehealthsuisse.terminology.loaders.TerminologyLoader;
+import ch.ehealthsuisse.terminology.services.BusinessService;
 import ch.ehealthsuisse.terminology.validators.VaccineTerminologyValidator;
 
 @SpringBootApplication
 public class CHTerminologyValidatorApplication implements ApplicationRunner {
 
-	private static String RESOURCE_DIR = "dir";
-	private static String VACD_TERM = "vacd";
-
 	private Logger logger = LoggerFactory.getLogger(getClass());
 
-	@Autowired
-	private TerminologyLoader resourceLoader;
+
 
 	@Autowired
-	private VaccineTerminologyValidator vaccineTerminologyValidator;
+	private BusinessService businessService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(CHTerminologyValidatorApplication.class, args);
@@ -35,30 +32,14 @@ public class CHTerminologyValidatorApplication implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		logger.info("start TerminologyValidatorApplication");
-		if (args.containsOption(RESOURCE_DIR) && //
-				args.getOptionValues(RESOURCE_DIR) != null && //
-				args.getOptionValues(RESOURCE_DIR).size() > 0) //
+		if (args.containsOption(CHTerminologyValidatorConstants.RESOURCE_DIR) && //
+				args.getOptionValues(CHTerminologyValidatorConstants.RESOURCE_DIR) != null && //
+				args.getOptionValues(CHTerminologyValidatorConstants.RESOURCE_DIR).size() > 0) //
 		{
-			logger.info(RESOURCE_DIR + " " + args.getOptionValues(RESOURCE_DIR).get(0));
+			logger.info(CHTerminologyValidatorConstants.RESOURCE_DIR + " "
+					+ args.getOptionValues(CHTerminologyValidatorConstants.RESOURCE_DIR).get(0));
 
-			if (args.containsOption(VACD_TERM)) {
-				logger.info("Check " + VACD_TERM);
-				VaccineTerminology vacTerm = resourceLoader
-						.loadVaccineTerminologyResources(args.getOptionValues(RESOURCE_DIR).get(0));
-				logger.info("Terminology loaded: " + vacTerm);
-
-				TerminologyValidationReport report = new TerminologyValidationReport();
-				vaccineTerminologyValidator.validateCodeSystems(vacTerm, report);
-
-				vaccineTerminologyValidator.validateValueSets(vacTerm, report);
-
-				vaccineTerminologyValidator.validateConceptMaps(vacTerm, report);
-				
-								
-				report.setSeverityLevel(ResultSeverityEnum.ERROR);
-				
-				logger.info("Validation report:\n" + report);
-			}
+			businessService.runValidations(args);
 
 		}
 		logger.info("finish TerminologyValidatorApplication");
