@@ -8,19 +8,12 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import ca.uhn.fhir.validation.ResultSeverityEnum;
-import ch.ehealthsuisse.terminology.domain.TerminologyValidationReport;
-import ch.ehealthsuisse.terminology.domain.VaccineTerminology;
-import ch.ehealthsuisse.terminology.loaders.TerminologyLoader;
 import ch.ehealthsuisse.terminology.services.BusinessService;
-import ch.ehealthsuisse.terminology.validators.VaccineTerminologyValidator;
 
 @SpringBootApplication
 public class CHTerminologyValidatorApplication implements ApplicationRunner {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
-
-
 
 	@Autowired
 	private BusinessService businessService;

@@ -13,7 +13,7 @@ import org.hl7.fhir.r4.model.ValueSet;
 /**
  * 
  */
-public class VaccineTerminology {
+public class GenericTerminology {
 
 	private List<CodeSystem> codeSystems;
 	private List<ValueSet> valueSets;
@@ -54,7 +54,7 @@ public class VaccineTerminology {
 
 	@Override
 	public String toString() {
-		return "VaccineTerminology [codeSystems=" + getCodeSystems().size() + ", valueSets=" + getValueSets().size() + ", conceptMaps="
+		return "Terminology [codeSystems=" + getCodeSystems().size() + ", valueSets=" + getValueSets().size() + ", conceptMaps="
 				+ getConceptMaps().size() + "]";
 	}
 

@@ -13,10 +13,15 @@ import ca.uhn.fhir.context.FhirContext;
  */
 @Configuration
 public class CHTerminologyValidatorConfiguration {
+	
+	private FhirContext ctxR4;
 
 	@Bean
-	public FhirContext fhirContext() {
-		return FhirContext.forR4();
+	FhirContext fhirContext() {
+		if (ctxR4 == null) {
+			ctxR4 = FhirContext.forR4();
+		}
+		return ctxR4;
 	}
 
 }

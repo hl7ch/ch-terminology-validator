@@ -4,7 +4,6 @@
 package ch.ehealthsuisse.terminology.services.impl;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -23,12 +22,12 @@ import com.ibm.icu.text.SimpleDateFormat;
 import ca.uhn.fhir.validation.ResultSeverityEnum;
 import ca.uhn.fhir.validation.ValidationResult;
 import ch.ehealthsuisse.terminology.CHTerminologyValidatorConstants;
+import ch.ehealthsuisse.terminology.domain.GenericTerminology;
 import ch.ehealthsuisse.terminology.domain.TerminologyValidationReport;
-import ch.ehealthsuisse.terminology.domain.VaccineTerminology;
 import ch.ehealthsuisse.terminology.domain.serializer.CustomValidationResultSerializer;
 import ch.ehealthsuisse.terminology.loaders.TerminologyLoader;
 import ch.ehealthsuisse.terminology.services.BusinessService;
-import ch.ehealthsuisse.terminology.validators.VaccineTerminologyValidator;
+import ch.ehealthsuisse.terminology.validators.TerminologyValidator;
 
 /**
  * 
@@ -41,60 +40,60 @@ public class BusinessServiceImpl implements BusinessService {
 	private TerminologyLoader resourceLoader;
 
 	@Autowired
-	private VaccineTerminologyValidator vaccineTerminologyValidator;
+	private TerminologyValidator terminologyValidator;
 
 	@Override
 	public void runValidations(ApplicationArguments args) {
-		if (args.containsOption(CHTerminologyValidatorConstants.VACD_TERM)) {
-			logger.info("Check " + CHTerminologyValidatorConstants.VACD_TERM);
-			VaccineTerminology vacTerm = resourceLoader.loadVaccineTerminologyResources(
-					args.getOptionValues(CHTerminologyValidatorConstants.RESOURCE_DIR).get(0));
-			logger.info("Terminology loaded: " + vacTerm);
 
-			TerminologyValidationReport report = new TerminologyValidationReport();
-			report.setResourceDirectory(args.getOptionValues(CHTerminologyValidatorConstants.RESOURCE_DIR).get(0));
-			report.setResourceStatistics(vacTerm.toString());
+		GenericTerminology vacTerm = resourceLoader
+				.loadTerminologyResources(args.getOptionValues(CHTerminologyValidatorConstants.RESOURCE_DIR).get(0));
+		logger.info("Terminology loaded: " + vacTerm);
 
-			vaccineTerminologyValidator.validateCodeSystems(vacTerm, report);
+		TerminologyValidationReport report = new TerminologyValidationReport();
+		report.setResourceDirectory(args.getOptionValues(CHTerminologyValidatorConstants.RESOURCE_DIR).get(0));
+		report.setResourceStatistics(vacTerm.toString());
 
-			vaccineTerminologyValidator.validateValueSets(vacTerm, report);
+		terminologyValidator.validateCodeSystems(vacTerm, report);
 
-			vaccineTerminologyValidator.validateConceptMaps(vacTerm, report);
+		terminologyValidator.validateValueSets(vacTerm, report);
 
-			report.setValidationSeverityLevel(ResultSeverityEnum.ERROR);
-			report.setCheckSeverityLevel(ResultSeverityEnum.WARNING);
+		terminologyValidator.validateConceptMaps(vacTerm, report);
 
-			logger.info("Validation report:\n" + report);
+		report.setValidationSeverityLevel(ResultSeverityEnum.ERROR);
+		report.setCheckSeverityLevel(ResultSeverityEnum.WARNING);
 
-			if (args.containsOption(CHTerminologyValidatorConstants.OUTPUTDIR)) {
-				SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmSS");
-				try {
+		logger.info("Validation report:\n" + report);
 
-					ObjectMapper objectMapper = new ObjectMapper();
-					SimpleModule module = new SimpleModule();
-					module.addSerializer(ValidationResult.class, new CustomValidationResultSerializer());
-					objectMapper.registerModule(module);
+		if (args.containsOption(CHTerminologyValidatorConstants.OUTPUTDIR)) {
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmSS");
+			try {
 
-					objectMapper.writerWithDefaultPrettyPrinter().writeValue(
-							new File(args.getOptionValues(CHTerminologyValidatorConstants.OUTPUTDIR).get(0),
-									report.getClass().getSimpleName() + "_" + sdf.format(new Date()) + ".json"),
-							report);
-				} catch (IOException e) {
-					logger.error("Error writing report output file", e);
-				}
+				ObjectMapper objectMapper = new ObjectMapper();
+				SimpleModule module = new SimpleModule();
+				module.addSerializer(ValidationResult.class, new CustomValidationResultSerializer());
+				objectMapper.registerModule(module);
 
-				try {
-					OutputStream fos = new FileOutputStream(
-							new File(args.getOptionValues(CHTerminologyValidatorConstants.OUTPUTDIR).get(0),
-									report.getClass().getSimpleName() + "_" + sdf.format(new Date()) + ".txt"));
-					fos.write(report.toString().getBytes());
-				} catch (IOException e) {
-					logger.error("Error writing report output file", e);
-				}
+				objectMapper.writerWithDefaultPrettyPrinter()
+						.writeValue(
+								new File(args.getOptionValues(CHTerminologyValidatorConstants.OUTPUTDIR).get(0),
+										report.getClass().getSimpleName() + "_" + sdf.format(new Date()) + ".json"),
+								report);
+			} catch (IOException e) {
+				logger.error("Error writing report output file", e);
+			}
 
+			try {
+				OutputStream fos = new FileOutputStream(
+						new File(args.getOptionValues(CHTerminologyValidatorConstants.OUTPUTDIR).get(0),
+								report.getClass().getSimpleName() + "_" + sdf.format(new Date()) + ".txt"));
+				fos.write(report.toString().getBytes());
+				fos.close();
+			} catch (IOException e) {
+				logger.error("Error writing report output file", e);
 			}
 
 		}
+
 	}
 
 }

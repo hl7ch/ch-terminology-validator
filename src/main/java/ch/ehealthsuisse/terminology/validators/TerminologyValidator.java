@@ -4,12 +4,12 @@
 package ch.ehealthsuisse.terminology.validators;
 
 import ch.ehealthsuisse.terminology.domain.TerminologyValidationReport;
-import ch.ehealthsuisse.terminology.domain.VaccineTerminology;
+import ch.ehealthsuisse.terminology.domain.GenericTerminology;
 
 /**
  * 
  */
-public interface VaccineTerminologyValidator {
+public interface TerminologyValidator {
 
 	/**
 	 * Methdo to do CodeSystem validation checks.
@@ -17,7 +17,7 @@ public interface VaccineTerminologyValidator {
 	 * @param vacTerm the Terminology object for vaccination
 	 * @param report  the Validation report
 	 */
-	void validateCodeSystems(VaccineTerminology vacTerm, TerminologyValidationReport report);
+	void validateCodeSystems(GenericTerminology vacTerm, TerminologyValidationReport report);
 
 	/**
 	 * Method to do ValueSet validation checks.
@@ -25,7 +25,7 @@ public interface VaccineTerminologyValidator {
 	 * @param vacTerm the Terminology object for vaccination
 	 * @param report  the Validation report
 	 */
-	void validateValueSets(VaccineTerminology vacTerm, TerminologyValidationReport report);
+	void validateValueSets(GenericTerminology vacTerm, TerminologyValidationReport report);
 
 	/**
 	 * Method to do ConceptMap validation checks.
@@ -33,6 +33,6 @@ public interface VaccineTerminologyValidator {
 	 * @param vacTerm the Terminology object for vaccination
 	 * @param report  the Validation report
 	 */
-	void validateConceptMaps(VaccineTerminology vacTerm, TerminologyValidationReport report);
+	void validateConceptMaps(GenericTerminology vacTerm, TerminologyValidationReport report);
 
 }

@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.hl7.fhir.common.hapi.validation.validator.FhirInstanceValidator;
 import org.hl7.fhir.instance.model.api.IBaseResource;
@@ -18,6 +19,8 @@ import org.hl7.fhir.r4.model.ConceptMap;
 import org.hl7.fhir.r4.model.ValueSet;
 import org.hl7.fhir.r4.model.ValueSet.ConceptReferenceComponent;
 import org.hl7.fhir.r4.model.ValueSet.ConceptSetComponent;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -27,26 +30,30 @@ import ca.uhn.fhir.validation.IValidatorModule;
 import ca.uhn.fhir.validation.ResultSeverityEnum;
 import ca.uhn.fhir.validation.ValidationResult;
 import ch.ehealthsuisse.terminology.domain.CodeSystemUniqueCheckResultItem;
+import ch.ehealthsuisse.terminology.domain.ConceptMapCodeCheckResult;
+import ch.ehealthsuisse.terminology.domain.ConceptMapCodeCheckResultItem;
 import ch.ehealthsuisse.terminology.domain.ConceptMapUniqueCheckResultItem;
+import ch.ehealthsuisse.terminology.domain.GenericTerminology;
 import ch.ehealthsuisse.terminology.domain.TerminologyValidationReport;
 import ch.ehealthsuisse.terminology.domain.UniqueCheckResult;
-import ch.ehealthsuisse.terminology.domain.VaccineTerminology;
 import ch.ehealthsuisse.terminology.domain.ValueSetCodeCheckResult;
 import ch.ehealthsuisse.terminology.domain.ValueSetCodeCheckResultItem;
 import ch.ehealthsuisse.terminology.domain.ValueSetUniqueCheckResultItem;
-import ch.ehealthsuisse.terminology.validators.VaccineTerminologyValidator;
+import ch.ehealthsuisse.terminology.validators.TerminologyValidator;
 
 /**
  * 
  */
 @Component
-public class VaccineTerminologyValidatorImpl implements VaccineTerminologyValidator {
+public class TerminologyValidatorImpl implements TerminologyValidator {
+
+	private Logger logger = LoggerFactory.getLogger(getClass());
 
 	@Autowired
 	private FhirContext fhirContext;
 
 	@Override
-	public void validateCodeSystems(VaccineTerminology vacTerm, TerminologyValidationReport report) {
+	public void validateCodeSystems(GenericTerminology vacTerm, TerminologyValidationReport report) {
 		List<CodeSystem> codeSystems = vacTerm.getCodeSystems();
 
 		codeSystems.forEach(codeSystem -> {
@@ -62,7 +69,7 @@ public class VaccineTerminologyValidatorImpl implements VaccineTerminologyValida
 	}
 
 	@Override
-	public void validateValueSets(VaccineTerminology vacTerm, TerminologyValidationReport report) {
+	public void validateValueSets(GenericTerminology vacTerm, TerminologyValidationReport report) {
 		List<ValueSet> valueSets = vacTerm.getValueSets();
 
 		valueSets.forEach(valueSet -> {
@@ -81,7 +88,7 @@ public class VaccineTerminologyValidatorImpl implements VaccineTerminologyValida
 	}
 
 	@Override
-	public void validateConceptMaps(VaccineTerminology vacTerm, TerminologyValidationReport report) {
+	public void validateConceptMaps(GenericTerminology vacTerm, TerminologyValidationReport report) {
 		List<ConceptMap> conceptMaps = vacTerm.getConceptMaps();
 
 		conceptMaps.forEach(conceptMap -> {
@@ -101,7 +108,9 @@ public class VaccineTerminologyValidatorImpl implements VaccineTerminologyValida
 	// Private Methods
 	// //////////////////////////////////////////////////////////////////////////
 
-	private void doCodeCheck(ConceptMap conceptMap, VaccineTerminology vacTerm, TerminologyValidationReport report) {
+	private void doCodeCheck(ConceptMap conceptMap, GenericTerminology vacTerm, TerminologyValidationReport report) {
+
+		ConceptMapCodeCheckResult cccr = new ConceptMapCodeCheckResult();
 
 		Optional<ValueSet> sourceVsOpt = getValueSet(conceptMap.getSourceUriType().getValue(), vacTerm);
 		Optional<ValueSet> targetVsOpt = getValueSet(conceptMap.getTargetUriType().getValue(), vacTerm);
@@ -111,14 +120,32 @@ public class VaccineTerminologyValidatorImpl implements VaccineTerminologyValida
 			if (sourceVsOpt.isPresent()) {
 				group.getElement().forEach(element -> {
 					if (!checkForCodeInValueSet(group.getSource(), element.getCode(), sourceVsOpt.get())) {
+//						logger.error("The source code '" + group.getSource() + "|" + element.getCode() + "|"
+//								+ element.getDisplay() + "' is not defined in the corresponding valueset.");
 
+						cccr.add(new ConceptMapCodeCheckResultItem()//
+								.setSeverity(ResultSeverityEnum.ERROR)//
+								.setSystem(group.getSource())//
+								.setCode(element.getCode()) //
+								.setDisplay(element.getDisplay()) //
+								.setMessage("The source code '" + group.getSource() + "|" + element.getCode() + "|"
+										+ element.getDisplay() + "' is not defined in the corresponding valueset."));
 					}
 
 					if (targetVsOpt.isPresent()) {
 						element.getTarget().forEach(target -> {
-
 							if (!checkForCodeInValueSet(group.getTarget(), target.getCode(), targetVsOpt.get())) {
+//								logger.error("The target code '" + group.getTarget() + "|" + target.getCode() + "|"
+//										+ target.getDisplay() + "' is not defined in the corresponding valueset.");
 
+								cccr.add(new ConceptMapCodeCheckResultItem()//
+										.setSeverity(ResultSeverityEnum.ERROR)//
+										.setSystem(group.getTarget())//
+										.setCode(target.getCode()) //
+										.setDisplay(target.getDisplay()) //
+										.setMessage("The target code '" + group.getTarget() + "|" + target.getCode()
+												+ "|" + target.getDisplay()
+												+ "' is not defined in the corresponding valueset."));
 							}
 
 						});
@@ -126,17 +153,59 @@ public class VaccineTerminologyValidatorImpl implements VaccineTerminologyValida
 				});
 			}
 		});
+
+		// check for codes in valueset but not in conceptmap
+		if (sourceVsOpt.isPresent()) {
+			sourceVsOpt.get().getCompose().getInclude().forEach(include -> {
+				include.getConcept().forEach(concept -> {
+					boolean notFound = true;
+					for (ConceptMap.ConceptMapGroupComponent group : conceptMap.getGroup()) {
+						for (ConceptMap.SourceElementComponent element : group.getElement()) {
+							if (element.getCode().equals(concept.getCode())) {
+								notFound = false;
+								break;
+							}
+						}
+					}
+					if (notFound) {
+//						logger.error("The source code '" + include.getSystem() + "|" + concept.getCode() + "|"
+//								+ concept.getDisplay() + "' is defined in the valueset but not in the conceptmap.");
+
+						cccr.add(new ConceptMapCodeCheckResultItem()//
+								.setSeverity(ResultSeverityEnum.ERROR)//
+								.setSystem(include.getSystem())//
+								.setCode(concept.getCode()) //
+								.setDisplay(concept.getDisplay()) //
+								.setMessage("The source code '" + include.getSystem() + "|" + concept.getCode() + "|"
+										+ concept.getDisplay()
+										+ "' is defined in the valueset but not in the conceptmap."));
+					}
+				});
+			});
+		}
+
+		report.getConceptMapCodeCheckResults().put(conceptMap.getId(), cccr);
 	}
 
 	private boolean checkForCodeInValueSet(String system, String code, ValueSet valueSet) {
-		return valueSet.getCompose().getInclude().stream()//
+		List<ConceptReferenceComponent> list = valueSet.getCompose().getInclude().stream()//
 				.filter(filter -> filter.getSystem().equals(system))//
 				.map(ConceptSetComponent::getConcept)//
-				.flatMap(Collection::stream).filter(filter2 -> filter2.getCode().equals(code))//
+				.flatMap(Collection::stream).collect(Collectors.toList());
+
+		boolean retVal = list.stream().filter(filter2 -> filter2.getCode().equals(code))//
 				.findAny().isPresent();
+
+		return retVal;
+
+//		return valueSet.getCompose().getInclude().stream()//
+//				.filter(filter -> filter.getSystem().equals(system))//
+//				.map(ConceptSetComponent::getConcept)//
+//				.flatMap(Collection::stream).filter(filter2 -> filter2.getCode().equals(code))//
+//				.findAny().isPresent();
 	}
 
-	private Optional<ValueSet> getValueSet(String url, VaccineTerminology vacTerm) {
+	private Optional<ValueSet> getValueSet(String url, GenericTerminology vacTerm) {
 		return vacTerm.getValueSets().stream().filter(filter -> filter.getUrl().equals(url)).findFirst();
 	}
 
@@ -198,7 +267,7 @@ public class VaccineTerminologyValidatorImpl implements VaccineTerminologyValida
 		report.addConceptMapUniqueCheckResult(conceptMap.getId(), ucResult);
 	}
 
-	private void doCodeCheck(ValueSet valueSet, VaccineTerminology vacTerm, TerminologyValidationReport report) {
+	private void doCodeCheck(ValueSet valueSet, GenericTerminology vacTerm, TerminologyValidationReport report) {
 		ValueSetCodeCheckResult vsccr = new ValueSetCodeCheckResult();
 		valueSet.getCompose().getInclude().forEach(include -> {
 			// get codesystem if available
@@ -296,11 +365,11 @@ public class VaccineTerminologyValidatorImpl implements VaccineTerminologyValida
 		FhirValidator validator = getValidator();
 		IIdType idElement = resource.getIdElement();
 		ValidationResult result = validator.validateWithResult(resource);
-		if(resource instanceof CodeSystem) {
-		report.addCodeSystemValidationResult(idElement.getValueAsString(), result);
-		}else if(resource instanceof ValueSet) {
+		if (resource instanceof CodeSystem) {
+			report.addCodeSystemValidationResult(idElement.getValueAsString(), result);
+		} else if (resource instanceof ValueSet) {
 			report.addValueSetValidationResult(idElement.getValueAsString(), result);
-		}else if(resource instanceof ConceptMap) {
+		} else if (resource instanceof ConceptMap) {
 			report.addConceptMapValidationResult(idElement.getValueAsString(), result);
 		}
 	}
@@ -324,7 +393,7 @@ public class VaccineTerminologyValidatorImpl implements VaccineTerminologyValida
 		return validator;
 	}
 
-	private Optional<CodeSystem> getCodeSystem(String system, VaccineTerminology vacTerm) {
+	private Optional<CodeSystem> getCodeSystem(String system, GenericTerminology vacTerm) {
 		return vacTerm.getCodeSystems().stream().filter(filter -> filter.getUrl().equals(system)).findAny();
 	}
 

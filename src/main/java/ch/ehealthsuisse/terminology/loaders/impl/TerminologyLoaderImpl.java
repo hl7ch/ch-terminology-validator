@@ -5,8 +5,6 @@ package ch.ehealthsuisse.terminology.loaders.impl;
 
 import java.io.File;
 import java.io.FilenameFilter;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,8 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import ca.uhn.fhir.context.FhirContext;
-import ca.uhn.fhir.parser.DataFormatException;
-import ch.ehealthsuisse.terminology.domain.VaccineTerminology;
+import ch.ehealthsuisse.terminology.domain.GenericTerminology;
 import ch.ehealthsuisse.terminology.loaders.TerminologyLoader;
 import ch.ehealthsuisse.terminology.utils.FhirFileParser;
 
@@ -36,14 +33,13 @@ public class TerminologyLoaderImpl implements TerminologyLoader {
 	private Logger log = LoggerFactory.getLogger(getClass());
 
 	@Override
-	public VaccineTerminology loadVaccineTerminologyResources(String path) {
-		VaccineTerminology retVal = new VaccineTerminology();
+	public GenericTerminology loadTerminologyResources(String path) {
+		GenericTerminology retVal = new GenericTerminology();
 		File[] files = new File(path).listFiles(new FilenameFilter() {
 
 			@Override
 			public boolean accept(File basePath, String filename) {
-				if (filename != null && (filename.endsWith(".json") || filename.endsWith(".xml"))
-						&& (filename.contains("ch-vacd"))) {
+				if (filename != null && (filename.endsWith(".json") || filename.endsWith(".xml"))) {
 					log.info("" + basePath + ", " + filename);
 					return true;
 				}
@@ -51,14 +47,17 @@ public class TerminologyLoaderImpl implements TerminologyLoader {
 			}
 		});
 
-		List<CodeSystem> codeSystems = getCodeSystems(files);
-		retVal.setCodeSystems(codeSystems);
+		if (files != null) {
 
-		List<ValueSet> valueSets = getValueSets(files);
-		retVal.setValueSets(valueSets);
+			List<CodeSystem> codeSystems = getCodeSystems(files);
+			retVal.setCodeSystems(codeSystems);
 
-		List<ConceptMap> conceptMaps = getConceptMaps(files);
-		retVal.setConceptMaps(conceptMaps);
+			List<ValueSet> valueSets = getValueSets(files);
+			retVal.setValueSets(valueSets);
+
+			List<ConceptMap> conceptMaps = getConceptMaps(files);
+			retVal.setConceptMaps(conceptMaps);
+		}
 
 		return retVal;
 	}
@@ -101,4 +100,5 @@ public class TerminologyLoaderImpl implements TerminologyLoader {
 		}
 		return retVal;
 	}
+
 }

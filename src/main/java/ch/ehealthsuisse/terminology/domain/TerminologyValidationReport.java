@@ -263,8 +263,8 @@ public class TerminologyValidationReport {
 		});
 
 		builder.append("\n\nValueSet and CodeSystem Check=");
-		getValueSetCodeCheckResults().forEach((id, vs) -> {
-			List<ValueSetCodeCheckResultItem> errors = vs.getResultItems().stream()
+		getConceptMapCodeCheckResults().forEach((id, vs) -> {
+			List<ConceptMapCodeCheckResultItem> errors = vs.getResultItems().stream()
 					.filter(filter -> filter.getSeverity().ordinal() >= checkSeverityLevel.ordinal())
 					.collect(Collectors.toList());
 
@@ -308,6 +308,39 @@ public class TerminologyValidationReport {
 		});
 
 		builder.append("\n\nConceptMap UniqueCheck=");
+		getConceptMapUniqueCheckResults().forEach((id, cm) -> {
+			List<UniqueCheckResultItem> errors = cm.getResultItems().stream()
+					.filter(filter -> filter.getSeverity().ordinal() >= checkSeverityLevel.ordinal())
+					.collect(Collectors.toList());
+			if (!errors.isEmpty()) {
+				builder.append("\n\t").append(id).append(":");
+				errors.forEach(message -> {
+					builder.append("\n\t\t")//
+							.append(message.getSeverity())//
+							.append(", source ")//
+							.append(((ConceptMapUniqueCheckResultItem) message).getSystem())//
+							.append("|")//
+							.append(((ConceptMapUniqueCheckResultItem) message).getCode())//
+							.append("|'")//
+							.append(((ConceptMapUniqueCheckResultItem) message).getDisplay());
+					if (StringUtils.isNoneEmpty(((ConceptMapUniqueCheckResultItem) message).getTargetSystem())) {
+						builder.append("', target ")//
+								.append(((ConceptMapUniqueCheckResultItem) message).getTargetSystem())//
+								.append("|")//
+								.append(((ConceptMapUniqueCheckResultItem) message).getTargetCode())//
+								.append("|'")//
+								.append(((ConceptMapUniqueCheckResultItem) message).getTargetDisplay());
+					} else {
+						builder.append("'");
+					}
+					builder.append(": ")//
+							.append(message.getMessage());
+				});
+				builder.append("\n");
+			}
+		});
+		
+		builder.append("\n\nConceptMap CodeCheck=");
 		getConceptMapUniqueCheckResults().forEach((id, cm) -> {
 			List<UniqueCheckResultItem> errors = cm.getResultItems().stream()
 					.filter(filter -> filter.getSeverity().ordinal() >= checkSeverityLevel.ordinal())
