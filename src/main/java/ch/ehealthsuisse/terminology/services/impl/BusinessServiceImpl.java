@@ -64,7 +64,15 @@ public class BusinessServiceImpl implements BusinessService {
 
 		logger.info("Validation report:\n" + report);
 
-		if (args.containsOption(CHTerminologyValidatorConstants.OUTPUTDIR)) {
+		if (args.containsOption(CHTerminologyValidatorConstants.OUTPUTDIR)
+				&& args.getOptionValues(CHTerminologyValidatorConstants.OUTPUTDIR) != null
+				&& args.getOptionValues(CHTerminologyValidatorConstants.OUTPUTDIR).size() > 0) {
+
+			File outputDir = new File(args.getOptionValues(CHTerminologyValidatorConstants.OUTPUTDIR).get(0));
+			if (!outputDir.exists()) {
+				outputDir.mkdirs();
+			}
+
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmSS");
 			try {
 
@@ -73,19 +81,19 @@ public class BusinessServiceImpl implements BusinessService {
 				module.addSerializer(ValidationResult.class, new CustomValidationResultSerializer());
 				objectMapper.registerModule(module);
 
-				objectMapper.writerWithDefaultPrettyPrinter()
-						.writeValue(
-								new File(args.getOptionValues(CHTerminologyValidatorConstants.OUTPUTDIR).get(0),
-										report.getClass().getSimpleName() + "_" + sdf.format(new Date()) + ".json"),
-								report);
+				File file = new File(outputDir,
+						report.getClass().getSimpleName() + "_" + sdf.format(new Date()) + ".json");
+
+				objectMapper.writerWithDefaultPrettyPrinter().writeValue(new FileOutputStream(file.getAbsoluteFile()),
+						report);
 			} catch (IOException e) {
 				logger.error("Error writing report output file", e);
 			}
 
 			try {
-				OutputStream fos = new FileOutputStream(
-						new File(args.getOptionValues(CHTerminologyValidatorConstants.OUTPUTDIR).get(0),
-								report.getClass().getSimpleName() + "_" + sdf.format(new Date()) + ".txt"));
+				File file = new File(outputDir,
+						report.getClass().getSimpleName() + "_" + sdf.format(new Date()) + ".txt");
+				OutputStream fos = new FileOutputStream(file.getAbsoluteFile());
 				fos.write(report.toString().getBytes());
 				fos.close();
 			} catch (IOException e) {
